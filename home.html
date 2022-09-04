@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Loading page</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Loading page" />
+    <meta name="keywords" content="Loading page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="headerlk"></div>
+    <div class="main-content">
+      <div class="wrapper">
+        <div class="container">
+          <div class="overlay"></div>
+          <div class="header">
+            <div class="header__logo"><a href="./home.html"><img class="header__logo-img" src="./images/logo.png"></a></div>
+            <div class="header__title"><a class="header__title-link" href="#">MARKETPLACE</a></div>
+            <div class="header__btn"><a class="btn button button--link" href="#">CONNECT WALLET</a>
+            </div>
+          </div>
+          <div class="content-inner">
+            <div class="tabs-wrap">
+              <ul class="tabs" id="weapon">
+                <li class="tabs__item" id="weapon"><img class="tabs__icon tabs__icon-active" src="./images/home/weapon_icon_active.svg"><img class="tabs__icon" src="./images/home/weapon_icon.svg"><span class="tabs__inner">Weapon</span></li>
+                <li class="tabs__item" id="box"><img class="tabs__icon tabs__icon-active" src="./images/home/box_icon_active.svg"><img class="tabs__icon" src="./images/home/box_icon.svg"><span class="tabs__inner">BOX</span></li>
+                <li class="tabs__item" id="character"><img class="tabs__icon tabs__icon-active" src="./images/home/character_icon_active.svg"><img class="tabs__icon" src="./images/home/character_icon.svg"><span class="tabs__inner">CHARACTER</span></li>
+                <li class="tabs__item" id="property"><img class="tabs__icon tabs__icon-active" src="./images/home/property_icon_active.svg"><img class="tabs__icon" src="./images/home/property_icon.svg"><span class="tabs__inner">PROPERTY</span></li>
+                <li class="tabs__item" id="craft"><img class="tabs__icon tabs__icon-active" src="./images/home/craft_icon_active.svg"><img class="tabs__icon" src="./images/home/craft_icon.svg"><span class="tabs__inner">CRAFT</span></li>
+              </ul>
+            </div>
+            <div class="tab-content contentweapon" id="weaponTab">
+              <div class="filter-area" id="filter-area">
+                <h3 class="filter-area__title">FILTER</h3>
+                <div class="filter-area__reset"><span>Filter</span>
+                  <div class="reset-group"><img class="reset-group__img" src="./images/home/refresh_icon.svg"><span class="reset-group__inner">Reset</span></div>
+                </div>
+                <div class="filter-area__type">
+                  <div class="type-header header-slide"><span>Type</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                  <div class="type-group header-slide-content">
+                    <label class="radio-inner">Recently Listed
+                      <input class="radio-inner__input" type="radio" name="radio" checked="checked"><span class="radio-inner__checkmark"></span>
+                    </label>
+                    <label class="radio-inner">Ending Soon
+                      <input class="radio-inner__input" type="radio" name="radio"><span class="radio-inner__checkmark"></span>
+                    </label>
+                    <label class="radio-inner">Price low - high
+                      <input class="radio-inner__input" type="radio" name="radio"><span class="radio-inner__checkmark"></span>
+                    </label>
+                    <label class="radio-inner">Price high - low
+                      <input class="radio-inner__input" type="radio" name="radio"><span class="radio-inner__checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="filter-area__rarity">
+                  <div class="rarity-header header-slide"><span>Rarity</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                  <div class="rarity-group header-slide-content">
+                    <label class="checkbox-inner">Common
+                      <input class="checkbox-inner__input" type="checkbox"><span class="checkbox-inner__checkmark"></span>
+                    </label>
+                    <label class="checkbox-inner">Rare
+                      <input class="checkbox-inner__input" type="checkbox"><span class="checkbox-inner__checkmark"></span>
+                    </label>
+                    <label class="checkbox-inner">Ultra Rare
+                      <input class="checkbox-inner__input" type="checkbox"><span class="checkbox-inner__checkmark"></span>
+                    </label>
+                    <label class="checkbox-inner">Epic
+                      <input class="checkbox-inner__input" type="checkbox"><span class="checkbox-inner__checkmark"></span>
+                    </label>
+                    <label class="checkbox-inner">Legendary
+                      <input class="checkbox-inner__input" type="checkbox"><span class="checkbox-inner__checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="filter-area__level">
+                  <div class="level-header header-slide"><span class="header-slide__level">Level</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                  <div class="level-group header-slide-content">
+                    <section class="range-slider Slicontainer"><span class="output outputOne"></span><span class="output outputTwo"></span><span class="full-range"></span><span class="incl-range"></span>
+                      <input class="rangeOne" name="rangeOne" value="0" min="0" max="0" step="1" type="range">
+                      <input class="rangeTwo" name="rangeTwo" value="30" min="0" max="60" step="1" type="range">
+                    </section>
+                  </div>
+                </div>
+                <div class="filter-area__price">
+                  <div class="price-header header-slide"><span>Price</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                  <div class="header-slide-content">
+                    <div class="price-group">
+                      <input class="price-group__input" type="text" placeholder="From Price"><span class="price-group__line"></span>
+                      <input class="price-group__input" type="text" placeholder="To Price">
+                    </div>
+                  </div>
+                </div>
+                <div class="filter-area__apply"><a class="btn button button--link button--dark" href="#"><span class="filter-area__pc">APPLY FILTER</span><span class="filter-area__mb">APPLY</span></a><a class="btn button button--link button--dark filter-area__mb" href="#">RESET</a></div>
+              </div>
+              <div class="main-area">
+                <div class="search-group">
+                  <div class="search-inner">
+                    <input class="search-inner__input" type="text" placeholder="Search"><img class="search-inner__img" src="./images/home/search_icon.svg">
+                  </div>
+                  <div class="dropdown-group">
+                    <div class="select-btn js-dropdown-btn"><span>Recently Listed</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                    <div class="dropdown-content">
+                      <ul class="options">
+                        <li class="dropdown-content__item">Recently Listed</li>
+                        <li class="dropdown-content__item">Ending Soon</li>
+                        <li class="dropdown-content__item">Price low - high</li>
+                        <li class="dropdown-content__item">Price hight - low</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter-mb" id="filter-mb"><img class="filter-mb__img" src="./images/home/filter_icon_mb.svg"></div>
+                </div>
+                <div class="list-items">
+                  <div class="single-item"><img class="loading" src="./images/home/loading.png"></div>
+                  <div class="single-item"><img class="loading" src="./images/home/loading.png"></div>
+                  <div class="single-item"><img class="loading" src="./images/home/loading.png"></div>
+                  <div class="single-item"><img class="loading" src="./images/home/loading.png"></div>
+                  <div class="single-item"><img class="loading" src="./images/home/loading.png"></div>
+                  <div class="single-item"><img class="loading" src="./images/home/loading.png"></div>
+                  <div class="single-item"><img class="loading" src="./images/home/loading.png"></div>
+                  <div class="single-item"><img class="loading" src="./images/home/loading.png"></div>
+                  <div class="single-item"><img class="loading" src="./images/home/loading.png"></div>
+                  <div class="single-item"><img class="loading" src="./images/home/loading.png"></div>
+                  <div class="single-item"><img class="loading" src="./images/home/loading.png"></div>
+                  <div class="single-item"><img class="loading" src="./images/home/loading.png"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content contentweapon" id="boxTab">
+              <div class="list-box"><a class="single-box single-box--common" href="./box-detail.html">
+                  <div class="single-bg">
+                    <div class="single-bg__overlay"></div>
+                    <div class="single-bg__linear single-bg__linear--common"></div>
+                    <div class="single-bg__light single-bg__light--common"></div>
+                    <div class="single-bg__ellipse single-bg__ellipse--common"></div>
+                    <div class="single-bg__fire"></div>
+                    <div class="single-bg__arrow"><img class="arrow__tl" src="./images/box/common-box/arrow.png"><img class="arrow__tr" src="./images/box/common-box/arrow.png"><img class="arrow__bl" src="./images/box/common-box/arrow.png"><img class="arrow__br" src="./images/box/common-box/arrow.png"></div>
+                    <div class="single-bg__content">
+                      <div class="box-head box-head--common">
+                        <div class="box-head__name">COMMON</div>
+                      </div>
+                      <div class="box-body"><img src="./images/box/box1.png"></div>
+                      <div class="box-end">
+                        <div class="box-end__title"><img src="./images/box/icon_box.png"><span>1000 RETH</span></div><span class="box-end__info">100 Boxes Left</span>
+                      </div>
+                    </div>
+                  </div>
+                </a><a class="single-box single-box--rare" href="./box-detail.html">
+                  <div class="single-bg">
+                    <div class="single-bg__overlay"></div>
+                    <div class="single-bg__linear single-bg__linear--rare"></div>
+                    <div class="single-bg__light single-bg__light--rare"></div>
+                    <div class="single-bg__ellipse single-bg__ellipse--rare"></div>
+                    <div class="single-bg__fire"></div>
+                    <div class="single-bg__arrow"><img class="arrow__tl" src="./images/box/rare/arrow.png"><img class="arrow__tr" src="./images/box/rare/arrow.png"><img class="arrow__bl" src="./images/box/rare/arrow.png"><img class="arrow__br" src="./images/box/rare/arrow.png"></div>
+                    <div class="single-bg__content">
+                      <div class="box-head box-head--rare">
+                        <div class="box-head__name">RARE</div>
+                      </div>
+                      <div class="box-body"><img src="./images/box/box2.png"></div>
+                      <div class="box-end">
+                        <div class="box-end__title"><img src="./images/box/icon_box.png"><span>1000 RETH</span></div><span class="box-end__info">100 Boxes Left</span>
+                      </div>
+                    </div>
+                  </div>
+                </a><a class="single-box single-box--epic" href="./box-detail.html">
+                  <div class="single-bg">
+                    <div class="single-bg__overlay"></div>
+                    <div class="single-bg__linear single-bg__linear--epic"></div>
+                    <div class="single-bg__light single-bg__light--epic"></div>
+                    <div class="single-bg__ellipse single-bg__ellipse--epic"></div>
+                    <div class="single-bg__fire"></div>
+                    <div class="single-bg__arrow"><img class="arrow__tl" src="./images/box/epic/arrow.png"><img class="arrow__tr" src="./images/box/epic/arrow.png"><img class="arrow__bl" src="./images/box/epic/arrow.png"><img class="arrow__br" src="./images/box/epic/arrow.png"></div>
+                    <div class="single-bg__content">
+                      <div class="box-head box-head--epic">
+                        <div class="box-head__name">EPIC</div>
+                      </div>
+                      <div class="box-body"><img src="./images/box/box3.png"></div>
+                      <div class="box-end">
+                        <div class="box-end__title"><img src="./images/box/icon_box.png"><span>1000 RETH</span></div><span class="box-end__info">100 Boxes Left</span>
+                      </div>
+                    </div>
+                  </div>
+                </a><a class="single-box single-box--legend" href="./box-detail.html">
+                  <div class="single-bg">
+                    <div class="single-bg__overlay"></div>
+                    <div class="single-bg__linear single-bg__linear--legend"></div>
+                    <div class="single-bg__light single-bg__light--legend"></div>
+                    <div class="single-bg__ellipse single-bg__ellipse--legend"></div>
+                    <div class="single-bg__fire"></div>
+                    <div class="single-bg__arrow"><img class="arrow__tl" src="./images/box/legend/arrow.png"><img class="arrow__tr" src="./images/box/legend/arrow.png"><img class="arrow__bl" src="./images/box/legend/arrow.png"><img class="arrow__br" src="./images/box/legend/arrow.png"></div>
+                    <div class="single-bg__content">
+                      <div class="box-head box-head--legend">
+                        <div class="box-head__name">LEGENDARY</div>
+                      </div>
+                      <div class="box-body"><img src="./images/box/box4.png"></div>
+                      <div class="box-end">
+                        <div class="box-end__title"><img src="./images/box/icon_box.png"><span>1000 RETH</span></div><span class="box-end__info">100 Boxes Left</span>
+                      </div>
+                    </div>
+                  </div>
+                </a></div>
+            </div>
+            <div class="tab-content contentweapon" id="characterTab">
+              <div class="filter-area" id="filter-area">
+                <h3 class="filter-area__title">FILTER</h3>
+                <div class="filter-area__reset"><span>Filter</span>
+                  <div class="reset-group"><img class="reset-group__img" src="./images/home/refresh_icon.svg"><span class="reset-group__inner">Reset</span></div>
+                </div>
+                <div class="filter-area__type">
+                  <div class="type-header header-slide"><span>Type</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                  <div class="type-group header-slide-content">
+                    <label class="radio-inner">Recently Listed
+                      <input class="radio-inner__input" type="radio" name="radio" checked="checked"><span class="radio-inner__checkmark"></span>
+                    </label>
+                    <label class="radio-inner">Ending Soon
+                      <input class="radio-inner__input" type="radio" name="radio"><span class="radio-inner__checkmark"></span>
+                    </label>
+                    <label class="radio-inner">Price low - high
+                      <input class="radio-inner__input" type="radio" name="radio"><span class="radio-inner__checkmark"></span>
+                    </label>
+                    <label class="radio-inner">Price high - low
+                      <input class="radio-inner__input" type="radio" name="radio"><span class="radio-inner__checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="filter-area__rarity">
+                  <div class="rarity-header header-slide"><span>Rarity</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                  <div class="rarity-group header-slide-content">
+                    <label class="checkbox-inner">Common
+                      <input class="checkbox-inner__input" type="checkbox"><span class="checkbox-inner__checkmark"></span>
+                    </label>
+                    <label class="checkbox-inner">Rare
+                      <input class="checkbox-inner__input" type="checkbox"><span class="checkbox-inner__checkmark"></span>
+                    </label>
+                    <label class="checkbox-inner">Ultra Rare
+                      <input class="checkbox-inner__input" type="checkbox"><span class="checkbox-inner__checkmark"></span>
+                    </label>
+                    <label class="checkbox-inner">Epic
+                      <input class="checkbox-inner__input" type="checkbox"><span class="checkbox-inner__checkmark"></span>
+                    </label>
+                    <label class="checkbox-inner">Legendary
+                      <input class="checkbox-inner__input" type="checkbox"><span class="checkbox-inner__checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="filter-area__level">
+                  <div class="level-header header-slide"><span class="header-slide__level">Level</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                  <div class="level-group header-slide-content">
+                    <section class="range-slider Slicontainer"><span class="output outputOne"></span><span class="output outputTwo"></span><span class="full-range"></span><span class="incl-range"></span>
+                      <input class="rangeOne" name="rangeOne" value="0" min="0" max="0" step="1" type="range">
+                      <input class="rangeTwo" name="rangeTwo" value="30" min="0" max="60" step="1" type="range">
+                    </section>
+                  </div>
+                </div>
+                <div class="filter-area__price">
+                  <div class="price-header header-slide"><span>Price</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                  <div class="header-slide-content">
+                    <div class="price-group">
+                      <input class="price-group__input" type="text" placeholder="From Price"><span class="price-group__line"></span>
+                      <input class="price-group__input" type="text" placeholder="To Price">
+                    </div>
+                  </div>
+                </div>
+                <div class="filter-area__apply"><a class="btn button button--link button--dark" href="#"><span class="filter-area__pc">APPLY FILTER</span><span class="filter-area__mb">APPLY</span></a><a class="btn button button--link button--dark filter-area__mb" href="#">RESET</a></div>
+              </div>
+              <div class="main-area">
+                <div class="search-group">
+                  <div class="search-inner">
+                    <input class="search-inner__input" type="text" placeholder="Search"><img class="search-inner__img" src="./images/home/search_icon.svg">
+                  </div>
+                  <div class="dropdown-group">
+                    <div class="select-btn js-dropdown-btn"><span>Recently Listed</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                    <div class="dropdown-content">
+                      <ul class="options">
+                        <li class="dropdown-content__item">Recently Listed</li>
+                        <li class="dropdown-content__item">Ending Soon</li>
+                        <li class="dropdown-content__item">Price low - high</li>
+                        <li class="dropdown-content__item">Price hight - low</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter-mb" id="filter-mb"><img class="filter-mb__img" src="./images/home/filter_icon_mb.svg"></div>
+                </div>
+                <div class="list-items list-items--character">
+                  <div class="character-item">
+                    <div class="character-item__bg"></div>
+                    <div class="overlay-area">
+                      <div class="overlay-area__bg overlay-area__bg--legend"></div>
+                      <div class="overlay-area__pattern"></div>
+                      <div class="overlay-area__round"></div>
+                      <div class="overlay-area__fire overlay-area__fire--legend"></div>
+                    </div>
+                    <div class="character-item__mascot character-item__mascot--legend"></div>
+                    <div class="character-arrow"><img class="character-arrow__tl" src="./images/character/legend/arrow.png"><img class="character-arrow__tr" src="./images/character/legend/arrow.png"><img class="character-arrow__bl" src="./images/character/legend/arrow.png"><img class="character-arrow__br" src="./images/character/legend/arrow.png"></div>
+                    <div class="character-item__content">
+                      <div class="box-info">
+                        <div class="box-info__head">
+                          <div class="box-info__title box-info__title--legend">Legendary</div>
+                          <div class="box-info__group">
+                            <div class="box-info__number">30
+                              <div class="box-info__level">lv</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-info__detail">Darfamg Sword</div>
+                        <div class="info-footer">
+                          <div class="info-footer__title"><img src="./images/character/icon_box.png">
+                            <div class="info-footer__name">1000<span>RETH</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="character-item">
+                    <div class="character-item__bg"></div>
+                    <div class="overlay-area">
+                      <div class="overlay-area__bg overlay-area__bg--epic"></div>
+                      <div class="overlay-area__pattern"></div>
+                      <div class="overlay-area__round"></div>
+                      <div class="overlay-area__fire overlay-area__fire--epic"></div>
+                    </div>
+                    <div class="character-item__mascot character-item__mascot--epic"></div>
+                    <div class="character-arrow"><img class="character-arrow__tl" src="./images/character/epic/arrow.png"><img class="character-arrow__tr" src="./images/character/epic/arrow.png"><img class="character-arrow__bl" src="./images/character/epic/arrow.png"><img class="character-arrow__br" src="./images/character/epic/arrow.png"></div>
+                    <div class="character-item__content">
+                      <div class="box-info">
+                        <div class="box-info__head">
+                          <div class="box-info__title box-info__title--epic">Epic</div>
+                          <div class="box-info__group">
+                            <div class="box-info__number">30
+                              <div class="box-info__level">lv</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-info__detail">Darfamg Sword</div>
+                        <div class="info-footer">
+                          <div class="info-footer__title"><img src="./images/character/icon_box.png">
+                            <div class="info-footer__name">1000<span>RETH</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="character-item">
+                    <div class="character-item__bg"></div>
+                    <div class="overlay-area">
+                      <div class="overlay-area__bg overlay-area__bg--ultra"></div>
+                      <div class="overlay-area__pattern overlay-area__pattern--ultra"></div>
+                      <div class="overlay-area__round"></div>
+                      <div class="overlay-area__fire overlay-area__fire--ultra"></div>
+                    </div>
+                    <div class="character-item__mascot character-item__mascot--ultra"></div>
+                    <div class="character-arrow"><img class="character-arrow__tl" src="./images/character/ultra/arrow.png"><img class="character-arrow__tr" src="./images/character/ultra/arrow.png"><img class="character-arrow__bl" src="./images/character/ultra/arrow.png"><img class="character-arrow__br" src="./images/character/ultra/arrow.png"></div>
+                    <div class="character-item__content">
+                      <div class="box-info">
+                        <div class="box-info__head">
+                          <div class="box-info__title box-info__title--ultra">Ultra Rare</div>
+                          <div class="box-info__group">
+                            <div class="box-info__number">30
+                              <div class="box-info__level">lv</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-info__detail">Darfamg Sword</div>
+                        <div class="info-footer">
+                          <div class="info-footer__title"><img src="./images/character/icon_box.png">
+                            <div class="info-footer__name">1000<span>RETH</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="character-item">
+                    <div class="character-item__bg"></div>
+                    <div class="overlay-area">
+                      <div class="overlay-area__bg overlay-area__bg--rare"></div>
+                      <div class="overlay-area__pattern"></div>
+                      <div class="overlay-area__round"></div>
+                      <div class="overlay-area__fire overlay-area__fire--rare"></div>
+                    </div>
+                    <div class="character-item__mascot character-item__mascot--rare"></div>
+                    <div class="character-arrow"><img class="character-arrow__tl" src="./images/character/rare/arrow.png"><img class="character-arrow__tr" src="./images/character/rare/arrow.png"><img class="character-arrow__bl" src="./images/character/rare/arrow.png"><img class="character-arrow__br" src="./images/character/rare/arrow.png"></div>
+                    <div class="character-item__content">
+                      <div class="box-info">
+                        <div class="box-info__head">
+                          <div class="box-info__title box-info__title--rare">Rare</div>
+                          <div class="box-info__group">
+                            <div class="box-info__number">30
+                              <div class="box-info__level">lv</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-info__detail">Darfamg Sword</div>
+                        <div class="info-footer">
+                          <div class="info-footer__title"><img src="./images/character/icon_box.png">
+                            <div class="info-footer__name">1000<span>RETH</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="character-item">
+                    <div class="character-item__bg"></div>
+                    <div class="overlay-area">
+                      <div class="overlay-area__bg overlay-area__bg--common"></div>
+                      <div class="overlay-area__pattern"></div>
+                      <div class="overlay-area__round"></div>
+                      <div class="overlay-area__fire overlay-area__fire--common"></div>
+                    </div>
+                    <div class="character-item__mascot character-item__mascot--common"></div>
+                    <div class="character-arrow"><img class="character-arrow__tl" src="./images/character/common/arrow.png"><img class="character-arrow__tr" src="./images/character/common/arrow.png"><img class="character-arrow__bl" src="./images/character/common/arrow.png"><img class="character-arrow__br" src="./images/character/common/arrow.png"></div>
+                    <div class="character-item__content">
+                      <div class="box-info">
+                        <div class="box-info__head">
+                          <div class="box-info__title box-info__title--common">Common</div>
+                          <div class="box-info__group">
+                            <div class="box-info__number">30
+                              <div class="box-info__level">lv</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-info__detail">Darfamg Sword</div>
+                        <div class="info-footer">
+                          <div class="info-footer__title"><img src="./images/character/icon_box.png">
+                            <div class="info-footer__name">1000<span>RETH</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="character-item">
+                    <div class="character-item__bg"></div>
+                    <div class="overlay-area">
+                      <div class="overlay-area__bg overlay-area__bg--legend"></div>
+                      <div class="overlay-area__pattern"></div>
+                      <div class="overlay-area__round"></div>
+                      <div class="overlay-area__fire overlay-area__fire--legend"></div>
+                    </div>
+                    <div class="character-item__mascot character-item__mascot--legend"></div>
+                    <div class="character-arrow"><img class="character-arrow__tl" src="./images/character/legend/arrow.png"><img class="character-arrow__tr" src="./images/character/legend/arrow.png"><img class="character-arrow__bl" src="./images/character/legend/arrow.png"><img class="character-arrow__br" src="./images/character/legend/arrow.png"></div>
+                    <div class="character-item__content">
+                      <div class="box-info">
+                        <div class="box-info__head">
+                          <div class="box-info__title box-info__title--legend">Legendary</div>
+                          <div class="box-info__group">
+                            <div class="box-info__number">30
+                              <div class="box-info__level">lv</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-info__detail">Darfamg Sword</div>
+                        <div class="info-footer">
+                          <div class="info-footer__title"><img src="./images/character/icon_box.png">
+                            <div class="info-footer__name">1000<span>RETH</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="character-item">
+                    <div class="character-item__bg"></div>
+                    <div class="overlay-area">
+                      <div class="overlay-area__bg overlay-area__bg--rare"></div>
+                      <div class="overlay-area__pattern"></div>
+                      <div class="overlay-area__round"></div>
+                      <div class="overlay-area__fire overlay-area__fire--rare"></div>
+                    </div>
+                    <div class="character-item__mascot character-item__mascot--rare"></div>
+                    <div class="character-arrow"><img class="character-arrow__tl" src="./images/character/rare/arrow.png"><img class="character-arrow__tr" src="./images/character/rare/arrow.png"><img class="character-arrow__bl" src="./images/character/rare/arrow.png"><img class="character-arrow__br" src="./images/character/rare/arrow.png"></div>
+                    <div class="character-item__content">
+                      <div class="box-info">
+                        <div class="box-info__head">
+                          <div class="box-info__title box-info__title--rare">Rare</div>
+                          <div class="box-info__group">
+                            <div class="box-info__number">30
+                              <div class="box-info__level">lv</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-info__detail">Darfamg Sword</div>
+                        <div class="info-footer">
+                          <div class="info-footer__title"><img src="./images/character/icon_box.png">
+                            <div class="info-footer__name">1000<span>RETH</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="character-item">
+                    <div class="character-item__bg"></div>
+                    <div class="overlay-area">
+                      <div class="overlay-area__bg overlay-area__bg--legend"></div>
+                      <div class="overlay-area__pattern"></div>
+                      <div class="overlay-area__round"></div>
+                      <div class="overlay-area__fire overlay-area__fire--legend"></div>
+                    </div>
+                    <div class="character-item__mascot character-item__mascot--legend"></div>
+                    <div class="character-arrow"><img class="character-arrow__tl" src="./images/character/legend/arrow.png"><img class="character-arrow__tr" src="./images/character/legend/arrow.png"><img class="character-arrow__bl" src="./images/character/legend/arrow.png"><img class="character-arrow__br" src="./images/character/legend/arrow.png"></div>
+                    <div class="character-item__content">
+                      <div class="box-info">
+                        <div class="box-info__head">
+                          <div class="box-info__title box-info__title--legend">Legendary</div>
+                          <div class="box-info__group">
+                            <div class="box-info__number">30
+                              <div class="box-info__level">lv</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-info__detail">Darfamg Sword</div>
+                        <div class="info-footer">
+                          <div class="info-footer__title"><img src="./images/character/icon_box.png">
+                            <div class="info-footer__name">1000<span>RETH</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="character-item">
+                    <div class="character-item__bg"></div>
+                    <div class="overlay-area">
+                      <div class="overlay-area__bg overlay-area__bg--common"></div>
+                      <div class="overlay-area__pattern"></div>
+                      <div class="overlay-area__round"></div>
+                      <div class="overlay-area__fire overlay-area__fire--common"></div>
+                    </div>
+                    <div class="character-item__mascot character-item__mascot--common"></div>
+                    <div class="character-arrow"><img class="character-arrow__tl" src="./images/character/common/arrow.png"><img class="character-arrow__tr" src="./images/character/common/arrow.png"><img class="character-arrow__bl" src="./images/character/common/arrow.png"><img class="character-arrow__br" src="./images/character/common/arrow.png"></div>
+                    <div class="character-item__content">
+                      <div class="box-info">
+                        <div class="box-info__head">
+                          <div class="box-info__title box-info__title--common">Common</div>
+                          <div class="box-info__group">
+                            <div class="box-info__number">30
+                              <div class="box-info__level">lv</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-info__detail">Darfamg Sword</div>
+                        <div class="info-footer">
+                          <div class="info-footer__title"><img src="./images/character/icon_box.png">
+                            <div class="info-footer__name">1000<span>RETH</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="character-item">
+                    <div class="character-item__bg"></div>
+                    <div class="overlay-area">
+                      <div class="overlay-area__bg overlay-area__bg--rare"></div>
+                      <div class="overlay-area__pattern"></div>
+                      <div class="overlay-area__round"></div>
+                      <div class="overlay-area__fire overlay-area__fire--rare"></div>
+                    </div>
+                    <div class="character-item__mascot character-item__mascot--rare"></div>
+                    <div class="character-arrow"><img class="character-arrow__tl" src="./images/character/rare/arrow.png"><img class="character-arrow__tr" src="./images/character/rare/arrow.png"><img class="character-arrow__bl" src="./images/character/rare/arrow.png"><img class="character-arrow__br" src="./images/character/rare/arrow.png"></div>
+                    <div class="character-item__content">
+                      <div class="box-info">
+                        <div class="box-info__head">
+                          <div class="box-info__title box-info__title--rare">Rare</div>
+                          <div class="box-info__group">
+                            <div class="box-info__number">30
+                              <div class="box-info__level">lv</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-info__detail">Darfamg Sword</div>
+                        <div class="info-footer">
+                          <div class="info-footer__title"><img src="./images/character/icon_box.png">
+                            <div class="info-footer__name">1000<span>RETH</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="character-item">
+                    <div class="character-item__bg"></div>
+                    <div class="overlay-area">
+                      <div class="overlay-area__bg overlay-area__bg--legend"></div>
+                      <div class="overlay-area__pattern"></div>
+                      <div class="overlay-area__round"></div>
+                      <div class="overlay-area__fire overlay-area__fire--legend"></div>
+                    </div>
+                    <div class="character-item__mascot character-item__mascot--legend"></div>
+                    <div class="character-arrow"><img class="character-arrow__tl" src="./images/character/legend/arrow.png"><img class="character-arrow__tr" src="./images/character/legend/arrow.png"><img class="character-arrow__bl" src="./images/character/legend/arrow.png"><img class="character-arrow__br" src="./images/character/legend/arrow.png"></div>
+                    <div class="character-item__content">
+                      <div class="box-info">
+                        <div class="box-info__head">
+                          <div class="box-info__title box-info__title--legend">Legendary</div>
+                          <div class="box-info__group">
+                            <div class="box-info__number">30
+                              <div class="box-info__level">lv</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-info__detail">Darfamg Sword</div>
+                        <div class="info-footer">
+                          <div class="info-footer__title"><img src="./images/character/icon_box.png">
+                            <div class="info-footer__name">1000<span>RETH</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="character-item">
+                    <div class="character-item__bg"></div>
+                    <div class="overlay-area">
+                      <div class="overlay-area__bg overlay-area__bg--common"></div>
+                      <div class="overlay-area__pattern"></div>
+                      <div class="overlay-area__round"></div>
+                      <div class="overlay-area__fire overlay-area__fire--common"></div>
+                    </div>
+                    <div class="character-item__mascot character-item__mascot--common"></div>
+                    <div class="character-arrow"><img class="character-arrow__tl" src="./images/character/common/arrow.png"><img class="character-arrow__tr" src="./images/character/common/arrow.png"><img class="character-arrow__bl" src="./images/character/common/arrow.png"><img class="character-arrow__br" src="./images/character/common/arrow.png"></div>
+                    <div class="character-item__content">
+                      <div class="box-info">
+                        <div class="box-info__head">
+                          <div class="box-info__title box-info__title--common">Common</div>
+                          <div class="box-info__group">
+                            <div class="box-info__number">30
+                              <div class="box-info__level">lv</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-info__detail">Darfamg Sword</div>
+                        <div class="info-footer">
+                          <div class="info-footer__title"><img src="./images/character/icon_box.png">
+                            <div class="info-footer__name">1000<span>RETH</span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pgnation">
+                  <ul class="pgnation-inner">
+                    <li><a class="active" href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content contentweapon" id="propertyTab">4Some content</div>
+            <div class="tab-content contentweapon" id="craftTab">5Some content</div>
+          </div>
+          <div class="footer">
+            <div class="footer-logo"><a href="#"><img src="./images/logo_footer.png"></a></div>
+            <ul class="footer-socials footer-socials--mb">
+              <li><a href=""><img src="./images/icon_game.svg"></a></li>
+              <li><a href=""><img src="./images/icon_game.svg"></a></li>
+              <li><a href=""><img src="./images/icon_m.svg"></a></li>
+              <li><a href=""><img src="./images/icon_twitter.svg"></a></li>
+              <li><a href=""><img src="./images/icon_youtube.svg"></a></li>
+              <li><a href=""><img src="./images/icon_instagram.svg"></a></li>
+            </ul>
+            <div class="footer-category">
+              <h4 class="footer__title footer__title--mb">Category</h4>
+              <div class="footer-category__link">
+                <ul class="category-items">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Marketplace</a></li>
+                </ul>
+                <ul class="category-items">
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Showroom</a></li>
+                </ul>
+                <ul class="category-items">
+                  <li><a href="#">Whitespace</a></li>
+                  <li><a href="#">Team</a></li>
+                </ul>
+              </div>
+              <ul class="footer-socials">
+                <li><a href=""><img src="./images/icon_game.svg"></a></li>
+                <li><a href=""><img src="./images/icon_game.svg"></a></li>
+                <li><a href=""><img src="./images/icon_m.svg"></a></li>
+                <li><a href=""><img src="./images/icon_twitter.svg"></a></li>
+                <li><a href=""><img src="./images/icon_youtube.svg"></a></li>
+                <li><a href=""><img src="./images/icon_instagram.svg"></a></li>
+              </ul>
+            </div>
+            <div class="footer-news">
+              <h4 class="footer__title">Newsletter</h4>
+              <p class="footer-news__info">
+                Subcribe to our newsletter to rêcive &nbsp<span>early discount offers and updates</span></p>
+              <div class="footer-form">
+                <input type="text" placeholder="Name" name="name">
+                <input type="text" placeholder="Email" name="email">
+              </div>
+              <div class="footer-btn"><a class="btn button button--link button--w170" href="#">SUBSCRIBE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

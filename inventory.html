@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Inventory page</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Inventory page" />
+    <meta name="keywords" content="Inventory page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="headerlk"></div>
+    <div class="main-content">
+      <div class="wrapper">
+        <div class="container">
+          <div class="overlay"></div>
+          <div class="header">
+            <div class="header__logo"><a href="./home.html"><img class="header__logo-img" src="./images/logo.png"></a></div>
+            <div class="header__title"><a class="header__title-link" href="#">MARKETPLACE</a></div>
+            <div class="header__avatar">
+              <div class="dropdown-group dropdown-group--avatar">
+                <div class="header__image js-dropdown-btn"><img src="./images/header-logged/avatar.png"></div>
+                <div class="dropdown-content dropdown-content--header">
+                  <div class="menu-avt">
+                    <div class="menu-avt__title">To The Moon</div>
+                    <div class="team-id"><span class="team-id__name">0x9e36341...b98as942f</span><img src="./images/header-logged/copy_icon.png"></div>
+                    <div class="balance">
+                      <div class="balance__name">Balance</div>
+                      <div class="balance__reth">10.000 RETH</div>
+                      <div class="balance__dollars">~100 USD</div>
+                    </div>
+                    <div class="menu-avt__hr"></div>
+                    <ul class="menu-items">
+                      <li class="menu-items__content">
+                        <div class="single-menu"><img class="single-menu__icon" src="./images/header-logged/icon_wallet.png"><span class="single-menu__name">Wallet</span></div>
+                      </li>
+                      <li class="menu-items__content">
+                        <div class="single-menu"><img class="single-menu__icon" src="./images/header-logged/icon_inventory.png"><span class="single-menu__name">Inventory</span></div>
+                      </li>
+                      <li class="menu-items__content">
+                        <div class="single-menu"><img class="single-menu__icon" src="./images/header-logged/icon_history.png"><span class="single-menu__name">History</span></div>
+                      </li>
+                      <li class="menu-items__content">
+                        <div class="single-menu"><img class="single-menu__icon" src="./images/header-logged/icon_signout.png"><span class="single-menu__name">Log out</span></div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inventory">
+            <div class="inventory-page">
+              <div class="tabs-wrap sidebar">
+                <div class="sidebar-top">
+                  <div class="active" id="walletTitle">
+                    <div class="sidebar-top"><img src="./images/inventory/wallet_mb.png"><span>Wallet</span></div>
+                  </div>
+                  <div id="inventoryTitle">
+                    <div class="sidebar-top"><img src="./images/inventory/inventory_mb.png"><span>Inventory</span></div>
+                  </div>
+                  <div id="historyTitle">
+                    <div class="sidebar-top"><img src="./images/inventory/inventory_mb.png"><span>History</span></div>
+                  </div>
+                  <div id="logoutTitle">
+                    <div class="sidebar-top"><img src="./images/inventory/inventory_mb.png"><span>Log Out</span></div>
+                  </div>
+                </div>
+                <div class="sidebar-info"><img class="sidebar__avt" src="./images/inventory/avatar.png">
+                  <div class="sidebar__name">To The Moon</div>
+                  <div class="copy-team">
+                    <div class="copy-team__id">0x9e36341...b98as942f</div><img class="copy-team__img" src="./images/inventory/icon_copy.png">
+                  </div>
+                </div>
+                <ul class="tabs tabs--inventory sidebar-list" id="wallet">
+                  <li class="sidebar-list__item active" id="wallet"><img class="sidebar-list__img" src="./images/inventory/icon_wallet.png"><span class="sidebar-list__name">Wallet</span></li>
+                  <li class="sidebar-list__item" id="inventory"><img class="sidebar-list__img" src="./images/inventory/icon_inventory.png"><span class="sidebar-list__name">Inventory</span></li>
+                  <li class="sidebar-list__item" id="history"><img class="sidebar-list__img" src="./images/inventory/icon_history.png"><span class="sidebar-list__name">History</span></li>
+                  <li class="sidebar-list__item" id="logout"><img class="sidebar-list__img" src="./images/inventory/icon_signout.png"><span class="sidebar-list__name">Log Out</span></li>
+                </ul>
+              </div>
+              <div class="contentwallet tab-content tab tab-content--inventory" id="walletTab">
+                <div class="wallet">
+                  <div class="wallet-page">
+                    <div class="wallet-page__title">Your Wallet</div>
+                    <div class="wallet-content">
+                      <div class="wallet-left">
+                        <div class="wallet-left__reth">RETH</div>
+                        <div class="wallet-left__number">10.000 RETH</div>
+                        <div class="wallet-left__usd">~ 10.000 USD</div>
+                        <div class="wallet-left__btn"><a class="btn button button--link button--wallet" href="#" data-modal="modal-deposit">PLAY NOW</a><a class="btn button button--link button--walletSecond" href="#" data-modal="modal-withdraw">PLAY NOW</a>
+                        </div>
+                        <div class="wallet-left__address">
+                          <div class="wallet-info">Your Address:<span>0x9fd87...332466cd9d</span></div><img src="./images/wallet/copy_icon.png">
+                        </div>
+                      </div>
+                      <div class="wallet-right">
+                        <div class="wallet-gold wallet-right__item">
+                          <div class="wallet-right__title">GOLD ( Ingame Currency)</div>
+                          <div class="wallet-right__number">10.000 GOLD</div>
+                        </div>
+                        <div class="wallet-gem wallet-right__item">
+                          <div class="wallet-right__title">GEM ( Ingame Currency)</div>
+                          <div class="wallet-right__number">10.000 GEM</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-area">
+                      <div class="modal modal-deposit" id="modal-deposit">
+                        <div class="modal-bg modal-exit"></div>
+                        <div class="modal-content modal-deposit__content"><img src="./images/modals/deposit/captcha.png">
+                          <div class="modal-deposit__id"><span>0x901404281a83550ca8cbdc12db9f6766f2c40af2</span><img src="./images/modals/deposit/captcha_copy.png"></div>
+                          <div class="modal-deposit__qr">Scan QR Code or Copy Wallet Address</div>
+                          <div class="modal-deposit__reth">Send only RETH to this deposit address</div>
+                          <div class="modal-deposit__network">Ensure the network is Ethereum (ERC20)</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-area">
+                      <div class="modal modal-withdraw" id="modal-withdraw">
+                        <div class="modal-bg modal-exit"></div>
+                        <div class="modal-content modal-withdraw__content">
+                          <div class="modal-withdraw__title">WITHDRAW RETH</div>
+                          <div class="single-form">
+                            <div class="single-form__label">Ethereum Address</div>
+                            <input type="text" placeholder="">
+                          </div>
+                          <div class="single-form">
+                            <div class="single-form__label">Amount</div>
+                            <div class="single-form__max">
+                              <input type="text" placeholder=""><span>MAX</span>
+                            </div>
+                          </div>
+                          <div class="modal-withdraw__minimum">Minimum WithDraw: 1000 RETH</div>
+                          <div class="modal-withdraw__service">Service Network: 1 ETH</div>
+                          <div class="modal-withdraw__network">Ensure the network is Ethereum (ERC20)</div>
+                          <div class="modal-withdraw__btn"><a class="btn button button--link button--full button--height44 modal-exit withdraw-btn" href="#">PLAY NOW</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-area">
+                      <div class="modal modal-confirm" id="modal-confirm">
+                        <div class="modal-bg modal-exit"></div>
+                        <div class="modal-content modal-confirm__content">
+                          <div class="modal-confirm__title">Do you want to withdraw RETH?</div>
+                          <div class="checkout-price__btn modal-confirm__btn"><a class="btn button button--link button--full button--height44 mmodal-exit" href="#">PLAY NOW</a><a class="btn button button--link button--full button--height44 button--fullGradient modal-exit confirm-withdraw" href="#">PLAY NOW</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-area">
+                      <div class="modal modal-wdsuccess" id="modal-wdsuccess">
+                        <div class="modal-bg modal-exit"></div>
+                        <div class="modal-content modal-wdsuccess__content"><img src="../images/modals/listing-success/check_img.png">
+                          <div class="modal-title">SUCCESS</div>
+                          <div class="modal-des">Order Submitted</div>
+                          <div class="modal-wdsuccess__info">
+                            <p>Your Withdrawl request has been submitted.</p>
+                            <p>You may visit History to check the order status.</p>
+                            <div class="modal-view">View Transaction:<span>8881a0ca</span></div>
+                          </div>
+                          <div class="checkout-price__btn modal-confirm__btn"><a class="btn button button--link button--full button--height44 modal-exit" href="#">PLAY NOW</a><a class="btn button button--link button--full button--height44 button--fullGradient modal-exit" href="#">PLAY NOW</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contentwallet tab-content tab-content--inventory" id="inventoryTab">
+                <div class="tabs-wrap tabs--pc">
+                  <ul class="tabs tabs--pc" id="weapon">
+                    <li class="tabs__item" id="weapon"><span class="tabs__inner tabs__inner--inventory">Weapon</span></li>
+                    <li class="tabs__item" id="box"><span class="tabs__inner tabs__inner--inventory">BOX</span></li>
+                    <li class="tabs__item" id="character"><span class="tabs__inner tabs__inner--inventory">CHARACTER</span></li>
+                    <li class="tabs__item" id="property"><span class="tabs__inner tabs__inner--inventory">PROPERTY</span></li>
+                    <li class="tabs__item" id="craft"><span class="tabs__inner tabs__inner--inventory">CRAFT</span></li>
+                  </ul>
+                </div>
+                <div class="tab-content contentweapon tab-content--inventory" id="weaponTab">
+                  <div class="filter-area filter-area--inventory" id="filter-area">
+                    <h3 class="filter-area__title">FILTER</h3>
+                    <div class="filter-area__reset"><span>Filter</span>
+                      <div class="reset-group"><img class="reset-group__img" src="./images/home/refresh_icon.svg"><span class="reset-group__inner">Reset</span></div>
+                    </div>
+                    <div class="filter-area__type">
+                      <div class="type-header header-slide"><span>Type</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                      <div class="type-group header-slide-content">
+                        <label class="radio-inner">Recently Listed
+                          <input class="radio-inner__input" type="radio" name="radio" checked="checked"><span class="radio-inner__checkmark"></span>
+                        </label>
+                        <label class="radio-inner">Ending Soon
+                          <input class="radio-inner__input" type="radio" name="radio"><span class="radio-inner__checkmark"></span>
+                        </label>
+                        <label class="radio-inner">Price low - high
+                          <input class="radio-inner__input" type="radio" name="radio"><span class="radio-inner__checkmark"></span>
+                        </label>
+                        <label class="radio-inner">Price high - low
+                          <input class="radio-inner__input" type="radio" name="radio"><span class="radio-inner__checkmark"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="filter-area__rarity">
+                      <div class="rarity-header header-slide"><span>Rarity</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                      <div class="rarity-group header-slide-content">
+                        <label class="checkbox-inner">Common
+                          <input class="checkbox-inner__input" type="checkbox"><span class="checkbox-inner__checkmark"></span>
+                        </label>
+                        <label class="checkbox-inner">Rare
+                          <input class="checkbox-inner__input" type="checkbox"><span class="checkbox-inner__checkmark"></span>
+                        </label>
+                        <label class="checkbox-inner">Ultra Rare
+                          <input class="checkbox-inner__input" type="checkbox"><span class="checkbox-inner__checkmark"></span>
+                        </label>
+                        <label class="checkbox-inner">Epic
+                          <input class="checkbox-inner__input" type="checkbox"><span class="checkbox-inner__checkmark"></span>
+                        </label>
+                        <label class="checkbox-inner">Legendary
+                          <input class="checkbox-inner__input" type="checkbox"><span class="checkbox-inner__checkmark"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="filter-area__level">
+                      <div class="level-header header-slide"><span class="header-slide__level">Level</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                      <div class="level-group header-slide-content">
+                        <section class="range-slider Slicontainer"><span class="output outputOne"></span><span class="output outputTwo"></span><span class="full-range"></span><span class="incl-range"></span>
+                          <input class="rangeOne" name="rangeOne" value="0" min="0" max="0" step="1" type="range">
+                          <input class="rangeTwo" name="rangeTwo" value="30" min="0" max="60" step="1" type="range">
+                        </section>
+                      </div>
+                    </div>
+                    <div class="filter-area__price">
+                      <div class="price-header header-slide"><span>Price</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                      <div class="header-slide-content">
+                        <div class="price-group">
+                          <input class="price-group__input" type="text" placeholder="From Price"><span class="price-group__line"></span>
+                          <input class="price-group__input" type="text" placeholder="To Price">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter-area__apply"><a class="btn button button--link button--dark" href="#"><span class="filter-area__pc">APPLY FILTER</span><span class="filter-area__mb">APPLY</span></a><a class="btn button button--link button--dark filter-area__mb" href="#">RESET</a></div>
+                  </div>
+                  <div class="search-group search-group--inventory">
+                    <div class="amount">
+                      <div class="amount__number">Weapon:<span>9</span></div>
+                    </div>
+                    <div class="dropdown-group">
+                      <div class="select-btn select-btn--inventory js-dropdown-btn"><span>All Items</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                      <div class="dropdown-content">
+                        <ul class="options">
+                          <li class="dropdown-content__item">All Items</li>
+                          <li class="dropdown-content__item">Listing</li>
+                          <li class="dropdown-content__item">Processing</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="dropdown-group dropdown-group--inventory">
+                      <div class="select-btn select-btn--inventory js-dropdown-btn">
+                        <div class="name-select"><img src="./images/inventory/weapon_icon_mb.png"><span>Weapon</span></div><img class="header-slide__img" src="./images/home/icon_dropdown.svg">
+                      </div>
+                      <div class="dropdown-content dropdown-content--inventory">
+                        <ul class="options">
+                          <li class="dropdown-content__item dropdown-content__item--inventory"><img src="./images/inventory/box_icon_mb.png"><span>Box</span></li>
+                          <li class="dropdown-content__item dropdown-content__item--inventory"><img src="./images/inventory/character_icon_mb.png"><span>Character</span></li>
+                          <li class="dropdown-content__item dropdown-content__item--inventory"><img src="./images/inventory/character_icon_mb.png"><span>Weapon</span></li>
+                          <li class="dropdown-content__item dropdown-content__item--inventory"><img src="./images/inventory/character_icon_mb.png"><span>Weapon</span></li>
+                          <li class="dropdown-content__item dropdown-content__item--inventory"><img src="./images/inventory/character_icon_mb.png"><span>Weapon</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="filter-mb" id="filter-mb"><img class="filter-mb__img" src="./images/home/filter_icon_mb.svg"></div>
+                  </div>
+                  <div class="list-items list-items--weapon"><a class="weapon-item weapon-item--inventory" href="#">
+                      <div class="weapon-item__bg weapon-item__bg--legend"></div>
+                      <div class="weapon-item__fire weapon-item__fire--legend"></div>
+                      <div class="weapon-item__pattern"></div>
+                      <div class="weapon-item__round"></div>
+                      <div class="weapon-arrow"><img class="weapon-arrow__tl" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__tr" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__bl" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__br" src="./images/weapon/legend/arrow.png"></div>
+                      <div class="weapon-content">
+                        <div class="weapon-content__sword weapon-content__sword--legend"></div>
+                        <div class="box-weapon">
+                          <div class="box-weapon__title box-weapon__title--legend">Legendary</div>
+                          <div class="box-weapon__group">
+                            <div class="box-weapon__number">30
+                              <div class="box-weapon__level">lv</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-weapon-info">
+                          <div class="box-weapon-info__title">Darfamg Sword</div>
+                          <div class="box-weapon-des"><img src="./images/weapon/icon_box.png"><span>1000 RETH</span></div>
+                        </div>
+                      </div>
+                    </a><a class="weapon-item weapon-item--inventory" href="#">
+                      <div class="weapon-item__bg weapon-item__bg--legend"></div>
+                      <div class="weapon-item__fire weapon-item__fire--legend"></div>
+                      <div class="weapon-item__pattern"></div>
+                      <div class="weapon-item__round"></div>
+                      <div class="weapon-arrow"><img class="weapon-arrow__tl" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__tr" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__bl" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__br" src="./images/weapon/legend/arrow.png"></div>
+                      <div class="weapon-content">
+                        <div class="weapon-content__sword weapon-content__sword--legend"></div>
+                        <div class="box-weapon">
+                          <div class="box-weapon__title box-weapon__title--legend">Legendary</div>
+                          <div class="box-weapon__group">
+                            <div class="box-weapon__number">30
+                              <div class="box-weapon__level">lv</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-weapon-info">
+                          <div class="box-weapon-info__title">Darfamg Sword</div>
+                          <div class="box-weapon-des"><img src="./images/weapon/icon_box.png"><span>1000 RETH</span></div>
+                        </div>
+                      </div>
+                    </a><a class="weapon-item weapon-item--inventory" href="#">
+                      <div class="weapon-item__bg weapon-item__bg--legend"></div>
+                      <div class="weapon-item__fire weapon-item__fire--legend"></div>
+                      <div class="weapon-item__pattern"></div>
+                      <div class="weapon-item__round"></div>
+                      <div class="weapon-arrow"><img class="weapon-arrow__tl" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__tr" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__bl" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__br" src="./images/weapon/legend/arrow.png"></div>
+                      <div class="weapon-content">
+                        <div class="weapon-content__sword weapon-content__sword--legend"></div>
+                        <div class="box-weapon">
+                          <div class="box-weapon__title box-weapon__title--legend">Legendary</div>
+                          <div class="box-weapon__group">
+                            <div class="box-weapon__number">30
+                              <div class="box-weapon__level">lv</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-weapon-info">
+                          <div class="box-weapon-info__title">Darfamg Sword</div>
+                          <div class="box-weapon-des"><img src="./images/weapon/icon_box.png"><span>1000 RETH</span></div>
+                        </div>
+                      </div>
+                    </a><a class="weapon-item weapon-item--inventory" href="#">
+                      <div class="weapon-item__bg weapon-item__bg--legend"></div>
+                      <div class="weapon-item__fire weapon-item__fire--legend"></div>
+                      <div class="weapon-item__pattern"></div>
+                      <div class="weapon-item__round"></div>
+                      <div class="weapon-arrow"><img class="weapon-arrow__tl" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__tr" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__bl" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__br" src="./images/weapon/legend/arrow.png"></div>
+                      <div class="weapon-content">
+                        <div class="weapon-content__sword weapon-content__sword--legend"></div>
+                        <div class="box-weapon">
+                          <div class="box-weapon__title box-weapon__title--legend">Legendary</div>
+                          <div class="box-weapon__group">
+                            <div class="box-weapon__number">30
+                              <div class="box-weapon__level">lv</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-weapon-info">
+                          <div class="box-weapon-info__title">Darfamg Sword</div>
+                          <div class="box-weapon-des"><img src="./images/weapon/icon_box.png"><span>1000 RETH</span></div>
+                        </div>
+                      </div>
+                    </a><a class="weapon-item weapon-item--inventory" href="#">
+                      <div class="weapon-item__bg weapon-item__bg--legend"></div>
+                      <div class="weapon-item__fire weapon-item__fire--legend"></div>
+                      <div class="weapon-item__pattern"></div>
+                      <div class="weapon-item__round"></div>
+                      <div class="weapon-arrow"><img class="weapon-arrow__tl" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__tr" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__bl" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__br" src="./images/weapon/legend/arrow.png"></div>
+                      <div class="weapon-content">
+                        <div class="weapon-content__sword weapon-content__sword--legend"></div>
+                        <div class="box-weapon">
+                          <div class="box-weapon__title box-weapon__title--legend">Legendary</div>
+                          <div class="box-weapon__group">
+                            <div class="box-weapon__number">30
+                              <div class="box-weapon__level">lv</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-weapon-info">
+                          <div class="box-weapon-info__title">Darfamg Sword</div>
+                          <div class="box-weapon-des"><img src="./images/weapon/icon_box.png"><span>1000 RETH</span></div>
+                        </div>
+                      </div>
+                    </a><a class="weapon-item weapon-item--inventory" href="#">
+                      <div class="weapon-item__bg weapon-item__bg--legend"></div>
+                      <div class="weapon-item__fire weapon-item__fire--legend"></div>
+                      <div class="weapon-item__pattern"></div>
+                      <div class="weapon-item__round"></div>
+                      <div class="weapon-arrow"><img class="weapon-arrow__tl" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__tr" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__bl" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__br" src="./images/weapon/legend/arrow.png"></div>
+                      <div class="weapon-content">
+                        <div class="weapon-content__sword weapon-content__sword--legend"></div>
+                        <div class="box-weapon">
+                          <div class="box-weapon__title box-weapon__title--legend">Legendary</div>
+                          <div class="box-weapon__group">
+                            <div class="box-weapon__number">30
+                              <div class="box-weapon__level">lv</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-weapon-info">
+                          <div class="box-weapon-info__title">Darfamg Sword</div>
+                          <div class="box-weapon-des"><img src="./images/weapon/icon_box.png"><span>1000 RETH</span></div>
+                        </div>
+                      </div>
+                    </a><a class="weapon-item weapon-item--inventory" href="#">
+                      <div class="weapon-item__bg weapon-item__bg--legend"></div>
+                      <div class="weapon-item__fire weapon-item__fire--legend"></div>
+                      <div class="weapon-item__pattern"></div>
+                      <div class="weapon-item__round"></div>
+                      <div class="weapon-arrow"><img class="weapon-arrow__tl" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__tr" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__bl" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__br" src="./images/weapon/legend/arrow.png"></div>
+                      <div class="weapon-content">
+                        <div class="weapon-content__sword weapon-content__sword--legend"></div>
+                        <div class="box-weapon">
+                          <div class="box-weapon__title box-weapon__title--legend">Legendary</div>
+                          <div class="box-weapon__group">
+                            <div class="box-weapon__number">30
+                              <div class="box-weapon__level">lv</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-weapon-info">
+                          <div class="box-weapon-info__title">Darfamg Sword</div>
+                          <div class="box-weapon-des"><img src="./images/weapon/icon_box.png"><span>1000 RETH</span></div>
+                        </div>
+                      </div>
+                    </a><a class="weapon-item weapon-item--inventory" href="#">
+                      <div class="weapon-item__bg weapon-item__bg--legend"></div>
+                      <div class="weapon-item__fire weapon-item__fire--legend"></div>
+                      <div class="weapon-item__pattern"></div>
+                      <div class="weapon-item__round"></div>
+                      <div class="weapon-arrow"><img class="weapon-arrow__tl" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__tr" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__bl" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__br" src="./images/weapon/legend/arrow.png"></div>
+                      <div class="weapon-content">
+                        <div class="weapon-content__sword weapon-content__sword--legend"></div>
+                        <div class="box-weapon">
+                          <div class="box-weapon__title box-weapon__title--legend">Legendary</div>
+                          <div class="box-weapon__group">
+                            <div class="box-weapon__number">30
+                              <div class="box-weapon__level">lv</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-weapon-info">
+                          <div class="box-weapon-info__title">Darfamg Sword</div>
+                          <div class="box-weapon-des"><img src="./images/weapon/icon_box.png"><span>1000 RETH</span></div>
+                        </div>
+                      </div>
+                    </a><a class="weapon-item weapon-item--inventory" href="#">
+                      <div class="weapon-item__bg weapon-item__bg--legend"></div>
+                      <div class="weapon-item__fire weapon-item__fire--legend"></div>
+                      <div class="weapon-item__pattern"></div>
+                      <div class="weapon-item__round"></div>
+                      <div class="weapon-arrow"><img class="weapon-arrow__tl" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__tr" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__bl" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__br" src="./images/weapon/legend/arrow.png"></div>
+                      <div class="weapon-content">
+                        <div class="weapon-content__sword weapon-content__sword--legend"></div>
+                        <div class="box-weapon">
+                          <div class="box-weapon__title box-weapon__title--legend">Legendary</div>
+                          <div class="box-weapon__group">
+                            <div class="box-weapon__number">30
+                              <div class="box-weapon__level">lv</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-weapon-info">
+                          <div class="box-weapon-info__title">Darfamg Sword</div>
+                          <div class="box-weapon-des"><img src="./images/weapon/icon_box.png"><span>1000 RETH</span></div>
+                        </div>
+                      </div>
+                    </a><a class="weapon-item weapon-item--inventory" href="#">
+                      <div class="weapon-item__bg weapon-item__bg--legend"></div>
+                      <div class="weapon-item__fire weapon-item__fire--legend"></div>
+                      <div class="weapon-item__pattern"></div>
+                      <div class="weapon-item__round"></div>
+                      <div class="weapon-arrow"><img class="weapon-arrow__tl" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__tr" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__bl" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__br" src="./images/weapon/legend/arrow.png"></div>
+                      <div class="weapon-content">
+                        <div class="weapon-content__sword weapon-content__sword--legend"></div>
+                        <div class="box-weapon">
+                          <div class="box-weapon__title box-weapon__title--legend">Legendary</div>
+                          <div class="box-weapon__group">
+                            <div class="box-weapon__number">30
+                              <div class="box-weapon__level">lv</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-weapon-info">
+                          <div class="box-weapon-info__title">Darfamg Sword</div>
+                          <div class="box-weapon-des"><img src="./images/weapon/icon_box.png"><span>1000 RETH</span></div>
+                        </div>
+                      </div>
+                    </a><a class="weapon-item weapon-item--inventory" href="#">
+                      <div class="weapon-item__bg weapon-item__bg--legend"></div>
+                      <div class="weapon-item__fire weapon-item__fire--legend"></div>
+                      <div class="weapon-item__pattern"></div>
+                      <div class="weapon-item__round"></div>
+                      <div class="weapon-arrow"><img class="weapon-arrow__tl" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__tr" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__bl" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__br" src="./images/weapon/legend/arrow.png"></div>
+                      <div class="weapon-content">
+                        <div class="weapon-content__sword weapon-content__sword--legend"></div>
+                        <div class="box-weapon">
+                          <div class="box-weapon__title box-weapon__title--legend">Legendary</div>
+                          <div class="box-weapon__group">
+                            <div class="box-weapon__number">30
+                              <div class="box-weapon__level">lv</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-weapon-info">
+                          <div class="box-weapon-info__title">Darfamg Sword</div>
+                          <div class="box-weapon-des"><img src="./images/weapon/icon_box.png"><span>1000 RETH</span></div>
+                        </div>
+                      </div>
+                    </a><a class="weapon-item weapon-item--inventory" href="#">
+                      <div class="weapon-item__bg weapon-item__bg--legend"></div>
+                      <div class="weapon-item__fire weapon-item__fire--legend"></div>
+                      <div class="weapon-item__pattern"></div>
+                      <div class="weapon-item__round"></div>
+                      <div class="weapon-arrow"><img class="weapon-arrow__tl" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__tr" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__bl" src="./images/weapon/legend/arrow.png"><img class="weapon-arrow__br" src="./images/weapon/legend/arrow.png"></div>
+                      <div class="weapon-content">
+                        <div class="weapon-content__sword weapon-content__sword--legend"></div>
+                        <div class="box-weapon">
+                          <div class="box-weapon__title box-weapon__title--legend">Legendary</div>
+                          <div class="box-weapon__group">
+                            <div class="box-weapon__number">30
+                              <div class="box-weapon__level">lv</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="box-weapon-info">
+                          <div class="box-weapon-info__title">Darfamg Sword</div>
+                          <div class="box-weapon-des"><img src="./images/weapon/icon_box.png"><span>1000 RETH</span></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="modal-area">
+                    <div class="modal modal-listing" id="modal-listing">
+                      <div class="modal-bg modal-exit"></div>
+                      <div class="modal-content modal-listing__content">
+                        <div class="modal-listing__title">CREATE LISTING</div>
+                        <div class="box-detail box-detail--listing">
+                          <div class="detail-image detail-image--listing">
+                            <div class="detail-inner">
+                              <div class="detail-inner__bg"></div>
+                              <div class="detail-inner__pattern detail-inner__pattern--listing"></div>
+                              <div class="detail-inner__round detail-inner__round--listing"></div>
+                              <div class="detail-inner__sword detail-inner__sword--listing"></div>
+                              <div class="detail-arrow detail-arrow--listing"><img class="detail-arrow__tl" src="./images/product-detail/arrow.png"><img class="detail-arrow__tr" src="./images/product-detail/arrow.png"><img class="detail-arrow__bl" src="./images/product-detail/arrow.png"><img class="detail-arrow__br" src="./images/product-detail/arrow.png"></div>
+                            </div>
+                          </div>
+                          <div class="box-info">
+                            <div class="info-legend info-legend--detail">
+                              <div class="info-legend__name"><span class="info-legend__name-box">Legendary</span><span class="info-legend__name-id info-legend__name-id--listing">#66081636987884</span></div>
+                              <h2 class="info-legend__title info-legend__title--listing">Darfamg Sword</h2>
+                              <p class="info-legend__des info-legend__des--listing">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non luctus tellus, ut rhoncus nunc. Nulla placerat id erat eget placerat. Cras eget magna vel neque euismod blandit et non n euismod blandit et non .</p>
+                            </div>
+                            <div class="box-info__owner">Owner by<span>To The Moon</span></div>
+                            <div class="hr_img"><img class="hr_img--mb" src="./images/listing_hr.png"></div>
+                            <div class="info-end info-end--listing">
+                              <div class="single-category">
+                                <div class="single-category__name"><img src="./images/product-detail/icon_sword.png"><span>Category</span></div>
+                                <div class="single-category__value">Sword</div>
+                              </div>
+                              <div class="single-category">
+                                <div class="single-category__name"><img src="./images/product-detail/icon_level.png"><span>Level</span></div>
+                                <div class="single-category__value">30</div>
+                              </div>
+                              <div class="single-category">
+                                <div class="single-category__name"><img src="./images/product-detail/icon_range.png"><span>Range</span></div>
+                                <div class="single-category__value">2300</div>
+                              </div>
+                            </div>
+                            <div class="info-form">
+                              <input type="text" placeholder="Type your price"><span>RETH</span>
+                            </div>
+                            <div class="info-form__price">The minimum selling price is 0.1 ETH</div>
+                            <div class="info-form__service">Service Fee</div>
+                            <div class="info-form__eth">0.0000000 ETH</div>
+                            <div class="box-info-btn"><a class="btn button button--link button--buy" href="#" data-modal="modal-checkout">PLAY NOW</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pgnation">
+                    <ul class="pgnation-inner">
+                      <li><a class="active" href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">...</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab-content contentweapon" id="boxTab">
+                  <p>contentweapon 22</p>
+                </div>
+                <div class="tab-content contentweapon" id="characterTab">
+                  <p>contentweapon 33</p>
+                </div>
+                <div class="tab-content contentweapon" id="propertyTab">
+                  <p>contentweapon 44</p>
+                </div>
+                <div class="tab-content contentweapon" id="craftTab">
+                  <p>contentweapon 55</p>
+                </div>
+              </div>
+              <div class="contentwallet tab-content tab-content--inventory" id="historyTab">
+                <div class="tabs-wrap tabs--pc">
+                  <ul class="tabs tabs--pc" id="crypto">
+                    <li class="tabs__item" id="crypto"><span class="tabs__inner tabs__inner--inventory">CRYPTO</span></li>
+                    <li class="tabs__item" id="itemht"><span class="tabs__inner tabs__inner--inventory">ITEM HISTORY</span></li>
+                  </ul>
+                </div>
+                <div class="tab-content contentcrypto tab-content--inventory" id="cryptoTab">
+                  <div class="filter-crypto filter-area">
+                    <div class="filter-crypto__title">FILTER</div>
+                    <div class="crypto-inner">
+                      <div class="crypto-item">
+                        <div class="crypto-item__label">Time</div>
+                        <div class="dropdown-group dropdown-group--mb">
+                          <div class="select-btn js-dropdown-btn"><span>Past 7 days</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                          <div class="dropdown-content">
+                            <ul class="options">
+                              <li class="dropdown-content__item">Past 30 days</li>
+                              <li class="dropdown-content__item">Past 30 days</li>
+                              <li class="dropdown-content__item">Customized</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="crypto-item">
+                        <div class="crypto-item__label">Type</div>
+                        <div class="dropdown-group dropdown-group--mb">
+                          <div class="select-btn js-dropdown-btn"><span>All</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                          <div class="dropdown-content">
+                            <ul class="options">
+                              <li class="dropdown-content__item">Deposit</li>
+                              <li class="dropdown-content__item">Withdraw</li>
+                              <li class="dropdown-content__item">Transfer</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="crypto-item">
+                        <div class="crypto-item__label">Asset</div>
+                        <div class="dropdown-group dropdown-group--mb">
+                          <div class="select-btn js-dropdown-btn"><span>All</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                          <div class="dropdown-content">
+                            <ul class="options">
+                              <li class="dropdown-content__item">RETH</li>
+                              <li class="dropdown-content__item">RETH</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="crypto-item">
+                        <div class="crypto-item__label">Status</div>
+                        <div class="dropdown-group dropdown-group--mb">
+                          <div class="select-btn js-dropdown-btn"><span>All</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                          <div class="dropdown-content">
+                            <ul class="options">
+                              <li class="dropdown-content__item">Completed</li>
+                              <li class="dropdown-content__item">Processing</li>
+                              <li class="dropdown-content__item">Failed</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="crypto-btn-mb"><a class="btn button button--link button--human button--full" href="#">SEARCH</a><a class="btn button button--link button--dark button--full" href="#">RESET</a>
+                    </div>
+                  </div>
+                  <div class="history-area" id="history-area">
+                    <div class="history-area__title">WITHDRAW DETAILS</div>
+                    <div class="history-status">
+                      <div class="history-status__title">Status</div>
+                      <div class="status-icon">
+                        <div class="status-icon__dot"></div>
+                        <div class="status-icon__name">Completed</div>
+                      </div>
+                    </div>
+                    <div class="history-item">
+                      <div class="history-item__name">Date</div>
+                      <div class="history-item__time">2022-05-26 15:56</div>
+                    </div>
+                    <div class="history-item">
+                      <div class="history-item__name">Token</div>
+                      <div class="history-item__time">RETH</div>
+                    </div>
+                    <div class="history-item">
+                      <div class="history-item__name">Withdraw Amount</div>
+                      <div class="history-item__time">10.000</div>
+                    </div>
+                    <div class="history-item">
+                      <div class="history-item__name">Network</div>
+                      <div class="history-item__time">ERC20</div>
+                    </div>
+                    <div class="history-item">
+                      <div class="history-item__name">Address</div>
+                      <div class="history-item__time">0x655018eb528766285938cdd5fbc4dc040d680cd9</div>
+                    </div>
+                    <div class="history-item">
+                      <div class="history-item__name">TxID</div>
+                      <div class="history-item__time">0xfb9637cb4d7596f2d42b47ddbdf83095fc1043f91fd75</div>
+                    </div>
+                  </div>
+                  <div class="search-group search-group--inventory">
+                    <div class="team-input">
+                      <div class="team-input__single">
+                        <div class="dropdown-group">
+                          <div class="select-btn select-btn--inventory js-dropdown-btn"><span>Type</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                          <div class="dropdown-content">
+                            <ul class="options">
+                              <li class="dropdown-content__item">All</li>
+                              <li class="dropdown-content__item">Buy</li>
+                              <li class="dropdown-content__item">Sell</li>
+                              <li class="dropdown-content__item">Sell</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team-input__single">
+                        <div class="dropdown-group">
+                          <div class="select-btn select-btn--inventory js-dropdown-btn"><span>Time</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                          <div class="dropdown-content">
+                            <ul class="options">
+                              <li class="dropdown-content__item">Past 7 days</li>
+                              <li class="dropdown-content__item">Past 30 days</li>
+                              <li class="dropdown-content__item">Past 90 days</li>
+                              <li class="dropdown-content__item" data-modal="modal-calendar">Customized</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team-input__single">
+                        <div class="dropdown-group">
+                          <div class="select-btn select-btn--inventory js-dropdown-btn"><span>Asset</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                          <div class="dropdown-content dropdown-content--search">
+                            <div class="search-wraper">
+                              <div class="search-option">
+                                <input type="text">
+                                <div class="search-option__inner">
+                                  <div class="search-option__search"><img src="./images/inventory/icon_search.png"></div>
+                                  <div class="search-option__close"><img src="./images/inventory/icon_close.png"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <ul class="options">
+                              <li class="dropdown-content__item">All</li>
+                              <li class="dropdown-content__item">Darfamg Sword</li>
+                              <li class="dropdown-content__item">Darfamg Sword</li>
+                              <li class="dropdown-content__item">Darfamg Sword</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team-input__single">
+                        <div class="dropdown-group">
+                          <div class="select-btn select-btn--inventory js-dropdown-btn"><span>Status</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                          <div class="dropdown-content">
+                            <ul class="options">
+                              <li class="dropdown-content__item">All</li>
+                              <li class="dropdown-content__item">Successful</li>
+                              <li class="dropdown-content__item">Failed</li>
+                              <li class="dropdown-content__item">Processing</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="amount">
+                      <div class="refresh-icon"><img class="refresh-icon" src="./images/inventory/icon_refresh.png"><span>Refresh</span></div>
+                    </div>
+                    <div class="dropdown-group dropdown-group--inventory">
+                      <div class="select-btn select-btn--inventory js-dropdown-btn">
+                        <div class="name-select"><span>Crypto</span></div><img class="header-slide__img" src="./images/home/icon_dropdown.svg">
+                      </div>
+                      <div class="dropdown-content dropdown-content--inventory">
+                        <ul class="options">
+                          <li class="dropdown-content__item dropdown-content__item--inventory"><img src="./images/inventory/box_icon_mb.png"><span>Box</span></li>
+                          <li class="dropdown-content__item dropdown-content__item--inventory"><img src="./images/inventory/character_icon_mb.png"><span>Character</span></li>
+                          <li class="dropdown-content__item dropdown-content__item--inventory"><img src="./images/inventory/character_icon_mb.png"><span>Weapon</span></li>
+                          <li class="dropdown-content__item dropdown-content__item--inventory"><img src="./images/inventory/character_icon_mb.png"><span>Weapon</span></li>
+                          <li class="dropdown-content__item dropdown-content__item--inventory"><img src="./images/inventory/character_icon_mb.png"></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="filter-mb" id="filter-mb"><img class="filter-mb__img" src="./images/home/filter_icon_mb.svg"></div>
+                  </div>
+                  <div class="table-detail">
+                    <div class="table-name">
+                      <div class="table-detail__asset table-detail__asset--crypto"><span>Asset</span></div>
+                      <div class="table-detail__type table-detail__type--crypto"><span>Type</span></div>
+                      <div class="table-detail__amount table-detail__amount--crypto"><span>Amount</span></div>
+                      <div class="table-detail__price table-detail__price--crypto"><span>Destination</span></div>
+                      <div class="table-detail__tus table-detail__tus--crypto"><span>Status</span></div>
+                      <div class="table-detail__time table-detail__time--crypto"><span>Time</span></div>
+                    </div>
+                    <div class="table-item">
+                      <div class="table-detail__asset table-detail__asset--crypto"><span>RETH</span></div>
+                      <div class="table-detail__type table-detail__type--crypto"><span>Withdraw</span></div>
+                      <div class="table-detail__amount table-detail__amount--crypto"><span>100.22312</span></div>
+                      <div class="table-detail__price table-detail__price--crypto"><span> 0x9e1d12...bas942f</span></div>
+                      <div class="table-detail__tus table-detail__tus--crypto"><span>Completed</span></div>
+                      <div class="table-detail__time table-detail__time--crypto"><span>2022-05-26 15:56</span></div>
+                    </div>
+                    <div class="table-item table-item--odd">
+                      <div class="table-detail__asset table-detail__asset--crypto"><span>RETH</span></div>
+                      <div class="table-detail__type table-detail__type--crypto"><span>Withdraw</span></div>
+                      <div class="table-detail__amount table-detail__amount--crypto"><span>100.22312</span></div>
+                      <div class="table-detail__price table-detail__price--crypto"><span> 0x9e1d12...bas942f</span></div>
+                      <div class="table-detail__tus table-detail__tus--crypto"><span>Completed</span></div>
+                      <div class="table-detail__time table-detail__time--crypto"><span>2022-05-26 15:56</span></div>
+                    </div>
+                    <div class="table-item">
+                      <div class="table-detail__asset table-detail__asset--crypto"><span>RETH</span></div>
+                      <div class="table-detail__type table-detail__type--crypto"><span>Withdraw</span></div>
+                      <div class="table-detail__amount table-detail__amount--crypto"><span>100.22312</span></div>
+                      <div class="table-detail__price table-detail__price--crypto"><span> 0x9e1d12...bas942f</span></div>
+                      <div class="table-detail__tus table-detail__tus--crypto"><span>Completed</span></div>
+                      <div class="table-detail__time table-detail__time--crypto"><span>2022-05-26 15:56</span></div>
+                    </div>
+                    <div class="table-item table-item--odd">
+                      <div class="table-detail__asset table-detail__asset--crypto"><span>RETH</span></div>
+                      <div class="table-detail__type table-detail__type--crypto"><span>Withdraw</span></div>
+                      <div class="table-detail__amount table-detail__amount--crypto"><span>100.22312</span></div>
+                      <div class="table-detail__price table-detail__price--crypto"><span> 0x9e1d12...bas942f</span></div>
+                      <div class="table-detail__tus table-detail__tus--crypto"><span>Completed</span></div>
+                      <div class="table-detail__time table-detail__time--crypto"><span>2022-05-26 15:56</span></div>
+                    </div>
+                    <div class="table-item">
+                      <div class="table-detail__asset table-detail__asset--crypto"><span>RETH</span></div>
+                      <div class="table-detail__type table-detail__type--crypto"><span>Withdraw</span></div>
+                      <div class="table-detail__amount table-detail__amount--crypto"><span>100.22312</span></div>
+                      <div class="table-detail__price table-detail__price--crypto"><span> 0x9e1d12...bas942f</span></div>
+                      <div class="table-detail__tus table-detail__tus--crypto"><span>Completed</span></div>
+                      <div class="table-detail__time table-detail__time--crypto"><span>2022-05-26 15:56</span></div>
+                    </div>
+                    <div class="table-item table-item--odd">
+                      <div class="table-detail__asset table-detail__asset--crypto"><span>RETH</span></div>
+                      <div class="table-detail__type table-detail__type--crypto"><span>Withdraw</span></div>
+                      <div class="table-detail__amount table-detail__amount--crypto"><span>100.22312</span></div>
+                      <div class="table-detail__price table-detail__price--crypto"><span> 0x9e1d12...bas942f</span></div>
+                      <div class="table-detail__tus table-detail__tus--crypto"><span>Completed</span></div>
+                      <div class="table-detail__time table-detail__time--crypto"><span>2022-05-26 15:56</span></div>
+                    </div>
+                    <div class="table-item">
+                      <div class="table-detail__asset table-detail__asset--crypto"><span>RETH</span></div>
+                      <div class="table-detail__type table-detail__type--crypto"><span>Withdraw</span></div>
+                      <div class="table-detail__amount table-detail__amount--crypto"><span>100.22312</span></div>
+                      <div class="table-detail__price table-detail__price--crypto"><span> 0x9e1d12...bas942f</span></div>
+                      <div class="table-detail__tus table-detail__tus--crypto"><span>Completed</span></div>
+                      <div class="table-detail__time table-detail__time--crypto"><span>2022-05-26 15:56</span></div>
+                    </div>
+                    <div class="table-item table-item--odd">
+                      <div class="table-detail__asset table-detail__asset--crypto"><span>RETH</span></div>
+                      <div class="table-detail__type table-detail__type--crypto"><span>Withdraw</span></div>
+                      <div class="table-detail__amount table-detail__amount--crypto"><span>100.22312</span></div>
+                      <div class="table-detail__price table-detail__price--crypto"><span> 0x9e1d12...bas942f</span></div>
+                      <div class="table-detail__tus table-detail__tus--crypto"><span>Completed</span></div>
+                      <div class="table-detail__time table-detail__time--crypto"><span>2022-05-26 15:56</span></div>
+                    </div>
+                  </div>
+                  <div class="table-mobile">
+                    <div class="mobile-item">
+                      <div class="mobile-item__name">
+                        <p>RETH</p><span>2022-05-26 15:56</span>
+                      </div>
+                      <div class="mobile-item__number">
+                        <div class="group-status">
+                          <p>100.000 RETH</p>
+                          <div class="status-info">
+                            <div class="status-info__dot"></div><span class="status-info__name">Completed</span>
+                          </div>
+                        </div>
+                        <div class="group-status-img"><img src="./images/inventory/more_vert.png"></div>
+                      </div>
+                    </div>
+                    <div class="mobile-item">
+                      <div class="mobile-item__name">
+                        <p>RETH</p><span>2022-05-26 15:56</span>
+                      </div>
+                      <div class="mobile-item__number">
+                        <div class="group-status">
+                          <p>100.000 RETH</p>
+                          <div class="status-info">
+                            <div class="status-info__dot"></div><span class="status-info__name">Completed</span>
+                          </div>
+                        </div>
+                        <div class="group-status-img"><img src="./images/inventory/more_vert.png"></div>
+                      </div>
+                    </div>
+                    <div class="mobile-item">
+                      <div class="mobile-item__name">
+                        <p>RETH</p><span>2022-05-26 15:56</span>
+                      </div>
+                      <div class="mobile-item__number">
+                        <div class="group-status">
+                          <p>100.000 RETH</p>
+                          <div class="status-info">
+                            <div class="status-info__dot"></div><span class="status-info__name">Completed</span>
+                          </div>
+                        </div>
+                        <div class="group-status-img"><img src="./images/inventory/more_vert.png"></div>
+                      </div>
+                    </div>
+                    <div class="mobile-item">
+                      <div class="mobile-item__name">
+                        <p>RETH</p><span>2022-05-26 15:56</span>
+                      </div>
+                      <div class="mobile-item__number">
+                        <div class="group-status">
+                          <p>100.000 RETH</p>
+                          <div class="status-info">
+                            <div class="status-info__dot"></div><span class="status-info__name">Completed</span>
+                          </div>
+                        </div>
+                        <div class="group-status-img"><img src="./images/inventory/more_vert.png"></div>
+                      </div>
+                    </div>
+                    <div class="mobile-item">
+                      <div class="mobile-item__name">
+                        <p>RETH</p><span>2022-05-26 15:56</span>
+                      </div>
+                      <div class="mobile-item__number">
+                        <div class="group-status">
+                          <p>100.000 RETH</p>
+                          <div class="status-info">
+                            <div class="status-info__dot"></div><span class="status-info__name">Completed</span>
+                          </div>
+                        </div>
+                        <div class="group-status-img"><img src="./images/inventory/more_vert.png"></div>
+                      </div>
+                    </div>
+                    <div class="mobile-item">
+                      <div class="mobile-item__name">
+                        <p>RETH</p><span>2022-05-26 15:56</span>
+                      </div>
+                      <div class="mobile-item__number">
+                        <div class="group-status">
+                          <p>100.000 RETH</p>
+                          <div class="status-info">
+                            <div class="status-info__dot"></div><span class="status-info__name">Completed</span>
+                          </div>
+                        </div>
+                        <div class="group-status-img"><img src="./images/inventory/more_vert.png"></div>
+                      </div>
+                    </div>
+                    <div class="mobile-item">
+                      <div class="mobile-item__name">
+                        <p>RETH</p><span>2022-05-26 15:56</span>
+                      </div>
+                      <div class="mobile-item__number">
+                        <div class="group-status">
+                          <p>100.000 RETH</p>
+                          <div class="status-info">
+                            <div class="status-info__dot"></div><span class="status-info__name">Completed</span>
+                          </div>
+                        </div>
+                        <div class="group-status-img"><img src="./images/inventory/more_vert.png"></div>
+                      </div>
+                    </div>
+                    <div class="mobile-item">
+                      <div class="mobile-item__name">
+                        <p>RETH</p><span>2022-05-26 15:56</span>
+                      </div>
+                      <div class="mobile-item__number">
+                        <div class="group-status">
+                          <p>100.000 RETH</p>
+                          <div class="status-info">
+                            <div class="status-info__dot"></div><span class="status-info__name">Completed</span>
+                          </div>
+                        </div>
+                        <div class="group-status-img"><img src="./images/inventory/more_vert.png"></div>
+                      </div>
+                    </div>
+                    <div class="mobile-item">
+                      <div class="mobile-item__name">
+                        <p>RETH</p><span>2022-05-26 15:56</span>
+                      </div>
+                      <div class="mobile-item__number">
+                        <div class="group-status">
+                          <p>100.000 RETH</p>
+                          <div class="status-info">
+                            <div class="status-info__dot"></div><span class="status-info__name">Completed</span>
+                          </div>
+                        </div>
+                        <div class="group-status-img"><img src="./images/inventory/more_vert.png"></div>
+                      </div>
+                    </div>
+                    <div class="mobile-item">
+                      <div class="mobile-item__name">
+                        <p>RETH</p><span>2022-05-26 15:56</span>
+                      </div>
+                      <div class="mobile-item__number">
+                        <div class="group-status">
+                          <p>100.000 RETH</p>
+                          <div class="status-info">
+                            <div class="status-info__dot"></div><span class="status-info__name">Completed</span>
+                          </div>
+                        </div>
+                        <div class="group-status-img"><img src="./images/inventory/more_vert.png"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pgnation">
+                    <ul class="pgnation-inner pgnation-inner--history">
+                      <li><a class="active" href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">...</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                    </ul>
+                  </div>
+                  <div class="modal-area">
+                    <div class="modal modal-listing" id="modal-listing">
+                      <div class="modal-bg modal-exit"></div>
+                      <div class="modal-content modal-listing__content">
+                        <div class="modal-listing__title">CREATE LISTING</div>
+                        <div class="box-detail box-detail--listing">
+                          <div class="detail-image detail-image--listing">
+                            <div class="detail-inner">
+                              <div class="detail-inner__bg"></div>
+                              <div class="detail-inner__pattern detail-inner__pattern--listing"></div>
+                              <div class="detail-inner__round detail-inner__round--listing"></div>
+                              <div class="detail-inner__sword detail-inner__sword--listing"></div>
+                              <div class="detail-arrow detail-arrow--listing"><img class="detail-arrow__tl" src="./images/product-detail/arrow.png"><img class="detail-arrow__tr" src="./images/product-detail/arrow.png"><img class="detail-arrow__bl" src="./images/product-detail/arrow.png"><img class="detail-arrow__br" src="./images/product-detail/arrow.png"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-area">
+                    <div class="modal modal-calendar" id="modal-calendar">
+                      <div class="modal-bg modal-exit"></div>
+                      <div class="modal-content modal-calendar__content">
+                        <div class="modal-calendar__title">Customize Time Range</div>
+                        <div class="modal-calendar__info">Select your time range within 12 months</div>
+                        <div class="group-date">
+                          <div class="team-date">
+                            <div class="team-date__label">Start Time</div>
+                            <div class="single-form">
+                              <input class="datepicker" type="text" value=""><img src="./images/modals/icon_calender.png">
+                            </div>
+                          </div>
+                          <div class="team-date__to"><span>to</span></div>
+                          <div class="team-date">
+                            <div class="team-date__label">End Time</div>
+                            <div class="single-form">
+                              <input class="datepicker" type="text" value=""><img src="./images/modals/icon_calender.png">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-calendar__btn"><a class="btn button button--link button--calendar modal-exit" href="#">PLAY NOW</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-area">
+                    <div class="modal modal-listing" id="modal-listing">
+                      <div class="modal-bg modal-exit"></div>
+                      <div class="modal-content modal-listing__content">
+                        <div class="modal-listing__title">CREATE LISTING</div>
+                        <div class="box-detail box-detail--listing">
+                          <div class="detail-image detail-image--listing">
+                            <div class="detail-inner">
+                              <div class="detail-inner__bg"></div>
+                              <div class="detail-inner__pattern detail-inner__pattern--listing"></div>
+                              <div class="detail-inner__round detail-inner__round--listing"></div>
+                              <div class="detail-inner__sword detail-inner__sword--listing"></div>
+                              <div class="detail-arrow detail-arrow--listing"><img class="detail-arrow__tl" src="./images/product-detail/arrow.png"><img class="detail-arrow__tr" src="./images/product-detail/arrow.png"><img class="detail-arrow__bl" src="./images/product-detail/arrow.png"><img class="detail-arrow__br" src="./images/product-detail/arrow.png"></div>
+                            </div>
+                          </div>
+                          <div class="box-info">
+                            <div class="info-legend info-legend--detail">
+                              <div class="info-legend__name"><span class="info-legend__name-box">Legendary</span><span class="info-legend__name-id info-legend__name-id--listing">#66081636987884</span></div>
+                              <h2 class="info-legend__title info-legend__title--listing">Darfamg Sword</h2>
+                              <p class="info-legend__des info-legend__des--listing">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non luctus tellus, ut rhoncus nunc. Nulla placerat id erat eget placerat. Cras eget magna vel neque euismod blandit et non n euismod blandit et non .</p>
+                            </div>
+                            <div class="box-info__owner">Owner by<span>To The Moon</span></div>
+                            <div class="hr_img"><img class="hr_img--mb" src="./images/listing_hr.png"></div>
+                            <div class="info-end info-end--listing">
+                              <div class="single-category">
+                                <div class="single-category__name"><img src="./images/product-detail/icon_sword.png"><span>Category</span></div>
+                                <div class="single-category__value">Sword</div>
+                              </div>
+                              <div class="single-category">
+                                <div class="single-category__name"><img src="./images/product-detail/icon_level.png"><span>Level</span></div>
+                                <div class="single-category__value">30</div>
+                              </div>
+                              <div class="single-category">
+                                <div class="single-category__name"><img src="./images/product-detail/icon_range.png"><span>Range</span></div>
+                                <div class="single-category__value">2300</div>
+                              </div>
+                            </div>
+                            <div class="info-form">
+                              <input type="text" placeholder="Type your price"><span>RETH</span>
+                            </div>
+                            <div class="info-form__price">The minimum selling price is 0.1 ETH</div>
+                            <div class="info-form__service">Service Fee</div>
+                            <div class="info-form__eth">0.0000000 ETH</div>
+                            <div class="box-info-btn"><a class="btn button button--link button--buy" href="#" data-modal="modal-checkout">PLAY NOW</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-content contentcrypto tab-content--inventory" id="itemhtTab">
+                  <div class="filter-crypto filter-area">
+                    <div class="filter-crypto__title">FILTER</div>
+                    <div class="crypto-inner">
+                      <div class="crypto-item">
+                        <div class="crypto-item__label">Time</div>
+                        <div class="dropdown-group dropdown-group--mb">
+                          <div class="select-btn js-dropdown-btn"><span>Past 7 days</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                          <div class="dropdown-content">
+                            <ul class="options">
+                              <li class="dropdown-content__item">Past 30 days</li>
+                              <li class="dropdown-content__item">Past 30 days</li>
+                              <li class="dropdown-content__item">Customized</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="crypto-item">
+                        <div class="crypto-item__label">Type</div>
+                        <div class="dropdown-group dropdown-group--mb">
+                          <div class="select-btn js-dropdown-btn"><span>All</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                          <div class="dropdown-content">
+                            <ul class="options">
+                              <li class="dropdown-content__item">Deposit</li>
+                              <li class="dropdown-content__item">Withdraw</li>
+                              <li class="dropdown-content__item">Transfer</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="crypto-item">
+                        <div class="crypto-item__label">Asset</div>
+                        <div class="dropdown-group dropdown-group--mb">
+                          <div class="select-btn js-dropdown-btn"><span>All</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                          <div class="dropdown-content">
+                            <ul class="options">
+                              <li class="dropdown-content__item">RETH</li>
+                              <li class="dropdown-content__item">RETH</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="crypto-item">
+                        <div class="crypto-item__label">Status</div>
+                        <div class="dropdown-group dropdown-group--mb">
+                          <div class="select-btn js-dropdown-btn"><span>All</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                          <div class="dropdown-content">
+                            <ul class="options">
+                              <li class="dropdown-content__item">Completed</li>
+                              <li class="dropdown-content__item">Processing</li>
+                              <li class="dropdown-content__item">Failed</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="crypto-btn-mb"><a class="btn button button--link button--human button--full" href="#">SEARCH</a><a class="btn button button--link button--dark button--full" href="#">RESET</a>
+                    </div>
+                  </div>
+                  <div class="history-area" id="history-area">
+                    <div class="history-area__title">WITHDRAW DETAILS</div>
+                    <div class="history-status">
+                      <div class="history-status__title">Status</div>
+                      <div class="status-icon">
+                        <div class="status-icon__dot"></div>
+                        <div class="status-icon__name">Completed</div>
+                      </div>
+                    </div>
+                    <div class="history-item">
+                      <div class="history-item__name">Date</div>
+                      <div class="history-item__time">2022-05-26 15:56</div>
+                    </div>
+                    <div class="history-item">
+                      <div class="history-item__name">Token</div>
+                      <div class="history-item__time">RETH</div>
+                    </div>
+                    <div class="history-item">
+                      <div class="history-item__name">Withdraw Amount</div>
+                      <div class="history-item__time">10.000</div>
+                    </div>
+                    <div class="history-item">
+                      <div class="history-item__name">Network</div>
+                      <div class="history-item__time">ERC20</div>
+                    </div>
+                    <div class="history-item">
+                      <div class="history-item__name">Address</div>
+                      <div class="history-item__time">0x655018eb528766285938cdd5fbc4dc040d680cd9</div>
+                    </div>
+                    <div class="history-item">
+                      <div class="history-item__name">TxID</div>
+                      <div class="history-item__time">0xfb9637cb4d7596f2d42b47ddbdf83095fc1043f91fd75</div>
+                    </div>
+                  </div>
+                  <div class="search-group search-group--inventory">
+                    <div class="team-input">
+                      <div class="team-input__single">
+                        <div class="dropdown-group">
+                          <div class="select-btn select-btn--inventory js-dropdown-btn"><span>Transfer</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                          <div class="dropdown-content">
+                            <ul class="options">
+                              <li class="dropdown-content__item">Transfer 1</li>
+                              <li class="dropdown-content__item">Transfer 1</li>
+                              <li class="dropdown-content__item">Transfer 1</li>
+                              <li class="dropdown-content__item">Transfer 1</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team-input__single">
+                        <div class="dropdown-group">
+                          <div class="select-btn select-btn--inventory js-dropdown-btn"><span>Past 7 days</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                          <div class="dropdown-content">
+                            <ul class="options">
+                              <li class="dropdown-content__item">Past 7 days</li>
+                              <li class="dropdown-content__item">Past 30 days</li>
+                              <li class="dropdown-content__item">Past 90 days</li>
+                              <li class="dropdown-content__item" data-modal="modal-calendar">Customized</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team-input__single">
+                        <div class="dropdown-group">
+                          <div class="select-btn select-btn--inventory js-dropdown-btn"><span>Darfarmg Sword</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                          <div class="dropdown-content dropdown-content--search">
+                            <div class="search-wraper">
+                              <div class="search-option">
+                                <input type="text">
+                                <div class="search-option__inner">
+                                  <div class="search-option__search"><img src="./images/inventory/icon_search.png"></div>
+                                  <div class="search-option__close"><img src="./images/inventory/icon_close.png"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <ul class="options">
+                              <li class="dropdown-content__item">All</li>
+                              <li class="dropdown-content__item">Darfamg Sword</li>
+                              <li class="dropdown-content__item">Darfamg Sword</li>
+                              <li class="dropdown-content__item">Darfamg Sword</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="team-input__single">
+                        <div class="dropdown-group">
+                          <div class="select-btn select-btn--inventory js-dropdown-btn"><span>Successful</span><img class="header-slide__img" src="./images/home/icon_dropdown.svg"></div>
+                          <div class="dropdown-content">
+                            <ul class="options">
+                              <li class="dropdown-content__item">All</li>
+                              <li class="dropdown-content__item">Successful</li>
+                              <li class="dropdown-content__item">Failed</li>
+                              <li class="dropdown-content__item">Processing</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="amount">
+                      <div class="refresh-icon"><img class="refresh-icon" src="./images/inventory/icon_refresh.png"><span>Refresh</span></div>
+                    </div>
+                    <div class="dropdown-group dropdown-group--inventory">
+                      <div class="select-btn select-btn--inventory js-dropdown-btn">
+                        <div class="name-select"><span>Crypto</span></div><img class="header-slide__img" src="./images/home/icon_dropdown.svg">
+                      </div>
+                      <div class="dropdown-content dropdown-content--inventory">
+                        <ul class="options">
+                          <li class="dropdown-content__item dropdown-content__item--inventory"><img src="./images/inventory/box_icon_mb.png"><span>Box</span></li>
+                          <li class="dropdown-content__item dropdown-content__item--inventory"><img src="./images/inventory/character_icon_mb.png"><span>Character</span></li>
+                          <li class="dropdown-content__item dropdown-content__item--inventory"><img src="./images/inventory/character_icon_mb.png"><span>Weapon</span></li>
+                          <li class="dropdown-content__item dropdown-content__item--inventory"><img src="./images/inventory/character_icon_mb.png"><span>Weapon</span></li>
+                          <li class="dropdown-content__item dropdown-content__item--inventory"><img src="./images/inventory/character_icon_mb.png"></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="filter-mb" id="filter-mb"><img class="filter-mb__img" src="./images/home/filter_icon_mb.svg"></div>
+                  </div>
+                  <div class="table-detail">
+                    <div class="table-name">
+                      <div class="table-detail__asset"><span>Asset</span></div>
+                      <div class="table-detail__type"><span>Type</span></div>
+                      <div class="table-detail__amount"><span>Amount</span></div>
+                      <div class="table-detail__price"><span>Price</span></div>
+                      <div class="table-detail__tus"><span>Status</span></div>
+                      <div class="table-detail__time"><span>Time</span></div>
+                    </div>
+                    <div class="table-item">
+                      <div class="table-detail__asset"><span>Darfarmg Sword</span></div>
+                      <div class="table-detail__type"><span>Transfer</span></div>
+                      <div class="table-detail__amount"><span>2</span></div>
+                      <div class="table-detail__price"><span> 100 ETH</span></div>
+                      <div class="table-detail__tus"><span>Completed</span></div>
+                      <div class="table-detail__time"><span>2022-05-26 15:56</span></div>
+                    </div>
+                    <div class="table-item table-item--odd">
+                      <div class="table-detail__asset"><span>Darfarmg Sword</span></div>
+                      <div class="table-detail__type"><span>Transfer</span></div>
+                      <div class="table-detail__amount"><span>2</span></div>
+                      <div class="table-detail__price"><span> 100 ETH</span></div>
+                      <div class="table-detail__tus"><span>Completed</span></div>
+                      <div class="table-detail__time"><span>2022-05-26 15:56</span></div>
+                    </div>
+                    <div class="table-item">
+                      <div class="table-detail__asset"><span>Darfarmg Sword</span></div>
+                      <div class="table-detail__type"><span>Transfer</span></div>
+                      <div class="table-detail__amount"><span>2</span></div>
+                      <div class="table-detail__price"><span> 100 ETH</span></div>
+                      <div class="table-detail__tus"><span>Completed</span></div>
+                      <div class="table-detail__time"><span>2022-05-26 15:56</span></div>
+                    </div>
+                    <div class="table-item table-item--odd">
+                      <div class="table-detail__asset"><span>Darfarmg Sword</span></div>
+                      <div class="table-detail__type"><span>Transfer</span></div>
+                      <div class="table-detail__amount"><span>2</span></div>
+                      <div class="table-detail__price"><span> 100 ETH</span></div>
+                      <div class="table-detail__tus"><span>Completed</span></div>
+                      <div class="table-detail__time"><span>2022-05-26 15:56</span></div>
+                    </div>
+                    <div class="table-item">
+                      <div class="table-detail__asset"><span>Darfarmg Sword</span></div>
+                      <div class="table-detail__type"><span>Transfer</span></div>
+                      <div class="table-detail__amount"><span>2</span></div>
+                      <div class="table-detail__price"><span> 100 ETH</span></div>
+                      <div class="table-detail__tus"><span>Completed</span></div>
+                      <div class="table-detail__time"><span>2022-05-26 15:56</span></div>
+                    </div>
+                    <div class="table-item table-item--odd">
+                      <div class="table-detail__asset"><span>Darfarmg Sword</span></div>
+                      <div class="table-detail__type"><span>Transfer</span></div>
+                      <div class="table-detail__amount"><span>2</span></div>
+                      <div class="table-detail__price"><span> 100 ETH</span></div>
+                      <div class="table-detail__tus"><span>Completed</span></div>
+                      <div class="table-detail__time"><span>2022-05-26 15:56</span></div>
+                    </div>
+                    <div class="table-item">
+                      <div class="table-detail__asset"><span>Darfarmg Sword</span></div>
+                      <div class="table-detail__type"><span>Transfer</span></div>
+                      <div class="table-detail__amount"><span>2</span></div>
+                      <div class="table-detail__price"><span> 100 ETH</span></div>
+                      <div class="table-detail__tus"><span>Completed</span></div>
+                      <div class="table-detail__time"><span>2022-05-26 15:56</span></div>
+                    </div>
+                    <div class="table-item table-item--odd">
+                      <div class="table-detail__asset"><span>Darfarmg Sword</span></div>
+                      <div class="table-detail__type"><span>Transfer</span></div>
+                      <div class="table-detail__amount"><span>2</span></div>
+                      <div class="table-detail__price"><span> 100 ETH</span></div>
+                      <div class="table-detail__tus"><span>Completed</span></div>
+                      <div class="table-detail__time"><span>2022-05-26 15:56</span></div>
+                    </div>
+                  </div>
+                  <div class="table-mobile">
+                    <div class="mobile-item">
+                      <div class="mobile-item__name">
+                        <p>RETH WITHDRAW</p><span>2022-05-26 15:56</span>
+                      </div>
+                      <div class="mobile-item__number">
+                        <div class="group-status">
+                          <p>100.000 RETH</p>
+                          <div class="status-info">
+                            <div class="status-info__dot"></div><span class="status-info__name">Completed</span>
+                          </div>
+                        </div>
+                        <div class="group-status-img"><img src="./images/inventory/more_vert.png"></div>
+                      </div>
+                    </div>
+                    <div class="mobile-item">
+                      <div class="mobile-item__name">
+                        <p>RETH WITHDRAW</p><span>2022-05-26 15:56</span>
+                      </div>
+                      <div class="mobile-item__number">
+                        <div class="group-status">
+                          <p>100.000 RETH</p>
+                          <div class="status-info">
+                            <div class="status-info__dot"></div><span class="status-info__name">Completed</span>
+                          </div>
+                        </div>
+                        <div class="group-status-img"><img src="./images/inventory/more_vert.png"></div>
+                      </div>
+                    </div>
+                    <div class="mobile-item">
+                      <div class="mobile-item__name">
+                        <p>RETH WITHDRAW</p><span>2022-05-26 15:56</span>
+                      </div>
+                      <div class="mobile-item__number">
+                        <div class="group-status">
+                          <p>100.000 RETH</p>
+                          <div class="status-info">
+                            <div class="status-info__dot"></div><span class="status-info__name">Completed</span>
+                          </div>
+                        </div>
+                        <div class="group-status-img"><img src="./images/inventory/more_vert.png"></div>
+                      </div>
+                    </div>
+                    <div class="mobile-item">
+                      <div class="mobile-item__name">
+                        <p>RETH WITHDRAW</p><span>2022-05-26 15:56</span>
+                      </div>
+                      <div class="mobile-item__number">
+                        <div class="group-status">
+                          <p>100.000 RETH</p>
+                          <div class="status-info">
+                            <div class="status-info__dot"></div><span class="status-info__name">Completed</span>
+                          </div>
+                        </div>
+                        <div class="group-status-img"><img src="./images/inventory/more_vert.png"></div>
+                      </div>
+                    </div>
+                    <div class="mobile-item">
+                      <div class="mobile-item__name">
+                        <p>RETH WITHDRAW</p><span>2022-05-26 15:56</span>
+                      </div>
+                      <div class="mobile-item__number">
+                        <div class="group-status">
+                          <p>100.000 RETH</p>
+                          <div class="status-info">
+                            <div class="status-info__dot"></div><span class="status-info__name">Completed</span>
+                          </div>
+                        </div>
+                        <div class="group-status-img"><img src="./images/inventory/more_vert.png"></div>
+                      </div>
+                    </div>
+                    <div class="mobile-item">
+                      <div class="mobile-item__name">
+                        <p>RETH WITHDRAW</p><span>2022-05-26 15:56</span>
+                      </div>
+                      <div class="mobile-item__number">
+                        <div class="group-status">
+                          <p>100.000 RETH</p>
+                          <div class="status-info">
+                            <div class="status-info__dot"></div><span class="status-info__name">Completed</span>
+                          </div>
+                        </div>
+                        <div class="group-status-img"><img src="./images/inventory/more_vert.png"></div>
+                      </div>
+                    </div>
+                    <div class="mobile-item">
+                      <div class="mobile-item__name">
+                        <p>RETH WITHDRAW</p><span>2022-05-26 15:56</span>
+                      </div>
+                      <div class="mobile-item__number">
+                        <div class="group-status">
+                          <p>100.000 RETH</p>
+                          <div class="status-info">
+                            <div class="status-info__dot"></div><span class="status-info__name">Completed</span>
+                          </div>
+                        </div>
+                        <div class="group-status-img"><img src="./images/inventory/more_vert.png"></div>
+                      </div>
+                    </div>
+                    <div class="mobile-item">
+                      <div class="mobile-item__name">
+                        <p>RETH WITHDRAW</p><span>2022-05-26 15:56</span>
+                      </div>
+                      <div class="mobile-item__number">
+                        <div class="group-status">
+                          <p>100.000 RETH</p>
+                          <div class="status-info">
+                            <div class="status-info__dot"></div><span class="status-info__name">Completed</span>
+                          </div>
+                        </div>
+                        <div class="group-status-img"><img src="./images/inventory/more_vert.png"></div>
+                      </div>
+                    </div>
+                    <div class="mobile-item">
+                      <div class="mobile-item__name">
+                        <p>RETH WITHDRAW</p><span>2022-05-26 15:56</span>
+                      </div>
+                      <div class="mobile-item__number">
+                        <div class="group-status">
+                          <p>100.000 RETH</p>
+                          <div class="status-info">
+                            <div class="status-info__dot"></div><span class="status-info__name">Completed</span>
+                          </div>
+                        </div>
+                        <div class="group-status-img"><img src="./images/inventory/more_vert.png"></div>
+                      </div>
+                    </div>
+                    <div class="mobile-item">
+                      <div class="mobile-item__name">
+                        <p>RETH WITHDRAW</p><span>2022-05-26 15:56</span>
+                      </div>
+                      <div class="mobile-item__number">
+                        <div class="group-status">
+                          <p>100.000 RETH</p>
+                          <div class="status-info">
+                            <div class="status-info__dot"></div><span class="status-info__name">Completed</span>
+                          </div>
+                        </div>
+                        <div class="group-status-img"><img src="./images/inventory/more_vert.png"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pgnation">
+                    <ul class="pgnation-inner pgnation-inner--history">
+                      <li><a class="active" href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">...</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="contentwallet tab-content tab-content--inventory" id="logoutTab">
+                <p> logoutTab</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="footer-logo"><a href="#"><img src="./images/logo_footer.png"></a></div>
+            <ul class="footer-socials footer-socials--mb">
+              <li><a href=""><img src="./images/icon_game.svg"></a></li>
+              <li><a href=""><img src="./images/icon_game.svg"></a></li>
+              <li><a href=""><img src="./images/icon_m.svg"></a></li>
+              <li><a href=""><img src="./images/icon_twitter.svg"></a></li>
+              <li><a href=""><img src="./images/icon_youtube.svg"></a></li>
+              <li><a href=""><img src="./images/icon_instagram.svg"></a></li>
+            </ul>
+            <div class="footer-category">
+              <h4 class="footer__title footer__title--mb">Category</h4>
+              <div class="footer-category__link">
+                <ul class="category-items">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Marketplace</a></li>
+                </ul>
+                <ul class="category-items">
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Showroom</a></li>
+                </ul>
+                <ul class="category-items">
+                  <li><a href="#">Whitespace</a></li>
+                  <li><a href="#">Team</a></li>
+                </ul>
+              </div>
+              <ul class="footer-socials">
+                <li><a href=""><img src="./images/icon_game.svg"></a></li>
+                <li><a href=""><img src="./images/icon_game.svg"></a></li>
+                <li><a href=""><img src="./images/icon_m.svg"></a></li>
+                <li><a href=""><img src="./images/icon_twitter.svg"></a></li>
+                <li><a href=""><img src="./images/icon_youtube.svg"></a></li>
+                <li><a href=""><img src="./images/icon_instagram.svg"></a></li>
+              </ul>
+            </div>
+            <div class="footer-news">
+              <h4 class="footer__title">Newsletter</h4>
+              <p class="footer-news__info">
+                Subcribe to our newsletter to rêcive &nbsp<span>early discount offers and updates</span></p>
+              <div class="footer-form">
+                <input type="text" placeholder="Name" name="name">
+                <input type="text" placeholder="Email" name="email">
+              </div>
+              <div class="footer-btn"><a class="btn button button--link button--w170" href="#">SUBSCRIBE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

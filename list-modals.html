@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Loading page</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Loading page" />
+    <meta name="keywords" content="Loading page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="headerlk"></div>
+    <div class="main-content">
+      <div class="wrapper">
+        <div class="container">
+          <div class="overlay"></div>
+          <div class="header">
+            <div class="header__logo"><a href="./home.html"><img class="header__logo-img" src="./images/logo.png"></a></div>
+            <div class="header__title"><a class="header__title-link" href="#">MARKETPLACE</a></div>
+            <div class="header__btn"><a class="btn button button--link" href="#">CONNECT WALLET</a>
+            </div>
+          </div>
+          <div class="content-inner">
+            <div class="single-modal"><a data-modal="modal-checkout">Open Modal checkout not have enough balance</a>
+              <div class="modal-area">
+                <div class="modal modal-checkout" id="modal-checkout">
+                  <div class="modal-bg modal-exit"></div>
+                  <div class="modal-content modal-checkout__content">
+                    <div class="modal-checkout__title">CHECK OUT</div>
+                    <div class="modal-checkout__info">You are about to purchase #66081636987884 Darfamg Sword</div>
+                    <div class="checkout-price">
+                      <div class="checkout-price__label">
+                        <div class="checkout-price__name">Your balance</div>
+                        <div class="checkout-price__number">16.000 RETH</div>
+                      </div>
+                      <div class="checkout-price__bg checkout-price__bg--error"><span class="checkout-price__bg-name">Price</span><span class="checkout-price__bg-value">10.000 RETH</span></div>
+                      <div class="checkout-price__error">Your balance is not enough funds. Please Deposit more and submit again</div>
+                      <div class="checkout-price__btn"><a class="btn button button--link button--full button--height44 js-show-loading modal-exit" href="#">PLAY NOW</a><a class="btn button button--link button--full button--height44 button--fullGradient modal-exit" href="#">PLAY NOW</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-modal"><a data-modal="modal-error">Open Modal error</a>
+              <div class="modal-area">
+                <div class="modal modal-error" id="modal-error">
+                  <div class="modal-bg modal-exit"></div>
+                  <div class="modal-content modal-error__content">
+                    <div class="modal-error__title">ERROR!</div>
+                    <div class="modal-error__info">Something goes wrong, please try again.</div>
+                    <div class="checkout-price__btn"><a class="btn button button--link button--height44 button--170px modal-exit" href="#">PLAY NOW</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-modal"><a data-modal="modal-success">Open Modal Listing success</a>
+              <div class="modal-area">
+                <div class="modal" id="modal-success">
+                  <div class="modal-bg modal-exit"></div>
+                  <div class="modal-content modal-content--listing"><img src="../images/modals/listing-success/check_img.png">
+                    <div class="modal-title">SUCCESS</div>
+                    <div class="modal-des">Thank you for your Listing.</div>
+                    <div class="modal-view">View Transaction:<span>8881a0ca</span></div><a class="btn button button--link button--human" href="#">CONFIRM</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-modal"><a data-modal="modal-metamask">Open Modal metamask</a>
+              <div class="modal-area">
+                <div class="modal modal-metamask" id="modal-metamask">
+                  <div class="modal-bg modal-exit"></div>
+                  <div class="modal-content modal-metamask__content"><img class="modal-metamask__close modal-exit" src="./images/modals/modal_close.png">
+                    <div class="modal-metamask__image"><img src="./images/modals/metamask_icon.png"></div>
+                    <div class="modal-metamask__tile">METAMASK</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-modal"><a data-modal="modal-network">Open Modal network</a>
+              <div class="modal-area">
+                <div class="modal modal-metamask" id="modal-network">
+                  <div class="modal-bg modal-exit"></div>
+                  <div class="modal-content modal-metamask__content"><img class="modal-metamask__close modal-exit" src="./images/modals/modal_close.png">
+                    <div class="modal-metamask__image modal-metamask__image--network"><img src="./images/modals/error_network.png"></div>
+                    <div class="modal-metamask__tile modal-metamask__tile--network">WRONG NETWORK</div>
+                    <div class="modal-metamask__des">You need to connect to supported network</div>
+                    <div class="modal-metamask__btn"><a class="btn button button--link button--create" href="#">SWITCH TO ethereum NETWORK</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-modal"><a data-modal="modal-notfound">Open Modal not found</a>
+              <div class="modal-area">
+                <div class="modal modal-metamask" id="modal-notfound">
+                  <div class="modal-bg modal-exit"></div>
+                  <div class="modal-content modal-metamask__content"><img class="modal-metamask__close modal-exit" src="./images/modals/modal_close.png">
+                    <div class="modal-metamask__image modal-metamask__image--network"><img src="./images/modals/error_network.png"></div>
+                    <div class="modal-metamask__tile modal-metamask__tile--network">METAMASK NOT FOUND</div>
+                    <div class="modal-metamask__des">You need to setup Metamask wallet to continue</div>
+                    <div class="modal-metamask__btn"><a class="btn button button--link button--create" href="#">DOWNLOAD METAMASK</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-modal"><a data-modal="modal-continue">Open Modal continue</a>
+              <div class="modal-area">
+                <div class="modal modal-metamask" id="modal-continue">
+                  <div class="modal-bg modal-exit"></div>
+                  <div class="modal-content modal-metamask__content"><img class="modal-metamask__close modal-exit" src="./images/modals/modal_close.png">
+                    <div class="modal-metamask__tile modal-metamask__tile--network">YOU ARE ALMOST THERE</div>
+                    <div class="modal-metamask__des">Connect your game account to countinue marketplace</div>
+                    <div class="modal-metamask__btn"><a class="btn button button--link button--create" href="#">CREATE NEW ACCOUNT</a><a class="btn button button--link button--exiting" href="#">LINK TO EXITING GAME ACCOUNT</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-modal"><a data-modal="modal-create">Open Modal create account</a>
+              <div class="modal-area">
+                <div class="modal modal-metamask modal-create" id="modal-create">
+                  <div class="modal-bg modal-exit"></div>
+                  <div class="modal-content modal-metamask__content modal-create__content"><img class="modal-metamask__close modal-exit" src="./images/modals/modal_close.png">
+                    <div class="modal-create__title">CREATE NEW ACCOUNT</div>
+                    <form class="main-form">
+                      <div class="create-form">
+                        <div class="create-form__label">Email</div>
+                        <input class="create-form__input" type="text" placeholder="Ex: nguyentung1305@gmail.com">
+                      </div>
+                      <div class="send-code">
+                        <div class="send-code__label">Enter code from Email</div>
+                        <div class="send-code__form">
+                          <input class="send-code__input" type="number">
+                          <button class="send-code__btn" disabled="disabled">SEND CODE</button>
+                        </div>
+                      </div>
+                      <div class="create-checkbox">
+                        <label class="checkbox-inner checkbox-inner--term">I here by confirm that I have read and agreed with all the &nbsp;<span>Terms & Conditions</span>
+                          <input class="checkbox-inner__input checkbox-inner__input--term" type="checkbox"><span class="checkbox-inner__checkmark checkbox-inner__checkmark--term"></span>
+                        </label>
+                      </div>
+                      <div class="create-form__btn">
+                        <button class="btn button button--create" type="button" disabled="disabled">NEXT
+                        </button>
+                      </div>
+                      <div class="create-form__connect">You already have an account?<span> Connect now</span></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-modal"><a data-modal="modal-link">Open Modal link account</a>
+              <div class="modal-area">
+                <div class="modal modal-metamask modal-create" id="modal-link">
+                  <div class="modal-bg modal-exit"></div>
+                  <div class="modal-content modal-metamask__content modal-create__content"><img class="modal-metamask__close modal-exit" src="./images/modals/modal_close.png">
+                    <div class="modal-create__title">LINK GAME ACCOUNT</div>
+                    <form class="main-form">
+                      <div class="create-form">
+                        <div class="create-form__label">Email</div>
+                        <input class="create-form__input" type="text" placeholder="Ex: nguyentung1305@gmail.com">
+                      </div>
+                      <div class="send-code">
+                        <div class="send-code__label">Enter code from Email</div>
+                        <div class="send-code__form">
+                          <input class="send-code__input" type="number">
+                          <button class="send-code__btn" disabled="disabled">SEND CODE</button>
+                        </div>
+                      </div>
+                      <div class="create-checkbox">
+                        <label class="checkbox-inner checkbox-inner--term">I here by confirm that I have read and agreed with all the &nbsp;<span>Terms & Conditions</span>
+                          <input class="checkbox-inner__input checkbox-inner__input--term" type="checkbox"><span class="checkbox-inner__checkmark checkbox-inner__checkmark--term"></span>
+                        </label>
+                      </div>
+                      <div class="create-form__btn">
+                        <button class="btn button button--create" type="button" disabled="disabled">LINK
+                        </button>
+                      </div>
+                      <div class="create-form__connect">You already have an account?<span> Connect now</span></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-modal"><a data-modal="modal-takecode">Open Modal take code</a>
+              <div class="modal-area">
+                <div class="modal modal-metamask modal-create" id="modal-takecode">
+                  <div class="modal-bg modal-exit"></div>
+                  <div class="modal-content modal-metamask__content modal-create__content"><img class="modal-metamask__close modal-exit" src="./images/modals/modal_close.png">
+                    <div class="modal-create__title">LINK GAME ACCOUNT</div>
+                    <form class="main-form">
+                      <div class="create-form">
+                        <div class="create-form__label">Email</div>
+                        <input class="create-form__input" type="text" placeholder="Ex: nguyentung1305@gmail.com">
+                      </div>
+                      <div class="send-code">
+                        <div class="send-code__label">Enter code from Email</div>
+                        <div class="send-code__form">
+                          <input class="send-code__input" type="number">
+                          <button class="send-code__btn" disabled="disabled">RESEND IN 59S</button>
+                        </div>
+                      </div>
+                      <div class="create-checkbox">
+                        <label class="checkbox-inner checkbox-inner--term">I here by confirm that I have read and agreed with all the &nbsp;<span>Terms & Conditions</span>
+                          <input class="checkbox-inner__input checkbox-inner__input--term" type="checkbox"><span class="checkbox-inner__checkmark checkbox-inner__checkmark--term"></span>
+                        </label>
+                      </div>
+                      <div class="create-form__btn">
+                        <button class="btn button button--create" type="button" disabled="disabled">NEXT
+                        </button>
+                      </div>
+                      <div class="create-form__connect">You already have an account?<span> Connect now</span></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-modal"><a data-modal="modal-createpass">Open Modal create pass</a>
+              <div class="modal-area">
+                <div class="modal modal-metamask modal-create" id="modal-createpass">
+                  <div class="modal-bg modal-exit"></div>
+                  <div class="modal-content modal-metamask__content modal-create__content"><img class="modal-metamask__close modal-exit" src="./images/modals/modal_close.png">
+                    <div class="modal-create__title">CREATE ACCOUNT</div>
+                    <form class="main-form main-form--createpass">
+                      <div class="create-form">
+                        <div class="create-form__label">Password</div>
+                        <input class="create-form__input" type="text" placeholder="Ex: nguyentung1305@gmail.com">
+                      </div>
+                      <div class="create-form">
+                        <div class="create-form__label">Confirm Password</div>
+                        <input class="create-form__input" type="text" placeholder="Ex: nguyentung1305@gmail.com">
+                      </div>
+                      <div class="create-form__btn create-form__btn--createpass">
+                        <button class="btn button button--create" type="button">CREATE ACCOUNT
+                        </button>
+                      </div>
+                      <div class="create-form__connect">You already have an account?<span> Connect now</span></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-modal"><a data-modal="modal-address">Open Modal link wallet address</a>
+              <div class="modal-area">
+                <div class="modal modal-metamask modal-create" id="modal-address">
+                  <div class="modal-bg modal-exit"></div>
+                  <div class="modal-content modal-metamask__content modal-create__content"><img class="modal-metamask__close modal-exit" src="./images/modals/modal_close.png">
+                    <div class="modal-create__title modal-create__title--address">LINK WALLET ADDRESS</div>
+                    <div class="modal-create__detail">Your account has been created. Link your address wallet to your account now to to get started</div>
+                    <div class="create-form__btn create-form__btn--createpass">
+                      <button class="btn button button--create" type="button">LINK
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="single-modal"><a data-modal="modal-complete">Open Modal Complete</a>
+              <div class="modal-area">
+                <div class="modal modal-metamask modal-create" id="modal-complete">
+                  <div class="modal-bg modal-exit"></div>
+                  <div class="modal-content modal-metamask__content modal-create__content"><img class="modal-metamask__close modal-exit" src="./images/modals/modal_close.png">
+                    <div class="modal-create__tick"><img src="./images/modals/complete_tick.png"></div>
+                    <div class="modal-create__title modal-create__title--address">WELCOME!</div>
+                    <div class="modal-create__detail">Your wallet now linked to your game account!<span>Login to get started.</span></div>
+                    <div class="create-form__btn create-form__btn--createpass">
+                      <button class="btn button button--create" type="button">EXPLORE OUR GAME NOW
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
